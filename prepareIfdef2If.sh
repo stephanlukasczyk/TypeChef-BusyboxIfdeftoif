@@ -21,7 +21,7 @@ fi
 
 # Check for run.sh file
 if [ ! -f $mkRun ]; then
-	java -Xmx1024M -Xss256M -XX:PermSize=256M -XX:MaxPermSize=512M -jar ../TypeChef/sbt-launch.jar mkrun
+	java -Xmx1024M -Xss256M -XX:PermSize=256M -XX:MaxPermSize=512M -jar sbt-launch.jar mkrun
 fi
 # Prepare busybox script
 ./run.sh de.fosd.typechef.busybox.ProcessFileList busybox/busybox_pcs.txt busybox-1.18.5/
