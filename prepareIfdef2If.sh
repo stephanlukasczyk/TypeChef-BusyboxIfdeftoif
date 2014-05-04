@@ -12,6 +12,7 @@ if [ ! -d $srcPath ]; then
 	# Busybox directory does not exist
 	if [ ! -f $srcPathArchive ]; then
 		#Download source files
+		echo "Downloading BusyBox source files."
 		wget http://www.busybox.net/downloads/busybox-1.18.5.tar.bz2
 	fi
 	# Extract source files
@@ -20,7 +21,7 @@ fi
 
 # Check for run.sh file
 if [ ! -f $mkRun ]; then
-	java -Xmx1024M -Xss256M -XX:PermSize=256M -XX:MaxPermSize=512M -jar sbt-launch.jar mkrun
+	java -Xmx1024M -Xss256M -XX:PermSize=256M -XX:MaxPermSize=512M -jar ../TypeChef/sbt-launch.jar mkrun
 fi
 # Prepare busybox script
 ./run.sh de.fosd.typechef.busybox.ProcessFileList busybox/busybox_pcs.txt busybox-1.18.5/
@@ -29,6 +30,7 @@ fi
 if [ ! -d $systemSourceFolder ]; then
 	if [ ! -f $systemSourceArchive ]; then
 		#Download system files
+		echo "Downloading system source files."
 		wget http://www.cs.cmu.edu/%7Eckaestne/tmp/includes-redhat.tar.bz2
 	fi
 	# Create redhat folder
