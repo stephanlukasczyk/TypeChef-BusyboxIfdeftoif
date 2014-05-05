@@ -6,3 +6,9 @@ target
 .idea
 .idea_modules/
 *.ifdeftoif
+ifdeftoif_progress.txt
+*.tar.bz2
+renamings_Functions.txt
+renamings_StructsAndVars.txt
+console_output.txt
+run.sh
