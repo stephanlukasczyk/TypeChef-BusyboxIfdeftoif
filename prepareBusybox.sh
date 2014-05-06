@@ -25,8 +25,8 @@ if [ ! -f $mkRun ]; then
 	java -Xmx1024M -Xss256M -XX:PermSize=256M -XX:MaxPermSize=512M -jar sbt-launch.jar mkrun
 fi
 # Check for ifdeftoif.sh file
-if [ ! -f $ifdeftoifScript/ifdeftoif.sh ]; then
-	$ifdeftoifScript/mkrun_ifdeftoif.sh
+if [ ! -f $typeChef/ifdeftoif.sh ]; then
+	$typeChef/mkrun_ifdeftoif.sh
 fi
 
 # Prepare busybox script, creates presence condition files
