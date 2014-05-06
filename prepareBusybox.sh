@@ -5,6 +5,7 @@ mkRun="run.sh"
 systemSourceArchive="includes-redhat.tar.bz2"
 systemSourceFolder="systems/redhat/usr"
 redhatFolder="systems/redhat"
+typeChef="../TypeChef"
 
 
 # Check for busybox source files
@@ -23,7 +24,12 @@ fi
 if [ ! -f $mkRun ]; then
 	java -Xmx1024M -Xss256M -XX:PermSize=256M -XX:MaxPermSize=512M -jar sbt-launch.jar mkrun
 fi
-# Prepare busybox script
+# Check for ifdeftoif.sh file
+if [ ! -f $ifdeftoifScript/ifdeftoif.sh ]; then
+	$ifdeftoifScript/mkrun_ifdeftoif.sh
+fi
+
+# Prepare busybox script, creates presence condition files
 ./run.sh de.fosd.typechef.busybox.ProcessFileList busybox/busybox_pcs.txt busybox-1.18.5/
 
 # Check system source files
