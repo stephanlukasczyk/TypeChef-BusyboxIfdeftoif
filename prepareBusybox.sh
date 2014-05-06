@@ -1,4 +1,7 @@
 #!/bin/bash
+
+path=$(cd "$(dirname "$0")"; pwd)
+
 srcPath="busybox-1.18.5"
 srcPathArchive="busybox-1.18.5.tar.bz2"
 mkRun="run.sh"
@@ -45,5 +48,7 @@ fi
 
 # Check for ifdeftoif.sh file
 if [ ! -f $typeChef/ifdeftoif.sh ]; then
-	$typeChef/mkrun_ifdeftoif.sh
+	cd $typeChef
+	mkrun_ifdeftoif.sh
+	cd $path
 fi
