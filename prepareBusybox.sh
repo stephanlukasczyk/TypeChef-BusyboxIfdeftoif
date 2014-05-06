@@ -24,10 +24,6 @@ fi
 if [ ! -f $mkRun ]; then
 	java -Xmx1024M -Xss256M -XX:PermSize=256M -XX:MaxPermSize=512M -jar sbt-launch.jar mkrun
 fi
-# Check for ifdeftoif.sh file
-if [ ! -f $typeChef/ifdeftoif.sh ]; then
-	$typeChef/mkrun_ifdeftoif.sh
-fi
 
 # Prepare busybox script, creates presence condition files
 ./run.sh de.fosd.typechef.busybox.ProcessFileList busybox/busybox_pcs.txt busybox-1.18.5/
@@ -45,4 +41,9 @@ if [ ! -d $systemSourceFolder ]; then
 	fi
 	# Extract system files
 	tar xvjf $systemSourceArchive -C $redhatFolder
+fi
+
+# Check for ifdeftoif.sh file
+if [ ! -f $typeChef/ifdeftoif.sh ]; then
+	$typeChef/mkrun_ifdeftoif.sh
 fi
