@@ -49,6 +49,6 @@ fi
 # Check for ifdeftoif.sh file
 if [ ! -f $typeChef/ifdeftoif.sh ]; then
 	cd $typeChef
-	mkrun_ifdeftoif.sh
+	./mkrun_ifdeftoif.sh
 	cd $path
 fi
