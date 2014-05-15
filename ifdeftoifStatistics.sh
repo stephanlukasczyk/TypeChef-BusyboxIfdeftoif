@@ -24,3 +24,5 @@ filesToProcess|while read i; do
   fi
 done
 
+## Create id2i_optionstruct
+./../TypeChef/ifdeftoif.sh --featureConfig BusyBoxDefConfig.config
