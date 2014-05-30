@@ -12,10 +12,8 @@ renamings_StructsAndVars.txt
 console_output.txt
 run.sh
 *.decluse
-*_ifdeftoif.c
 *.dbg
 *.err
-*.interface
 *.pi
 *.pi_db
 *.time
