@@ -35,6 +35,7 @@ core
 .gdbinit
 *.err
 *.dbg
-*.interface
 *.pi
 *.time
+*_ifdeftoif.c
+*_orig.c
