@@ -94,12 +94,13 @@
         sha512sum, showkey, slattach, sleep, smemcap, softlimit, sort,
         split, start-stop-daemon, stat, strings, stty, su, sulogin, sum, sv,
         svlogd, swapoff, swapon, switch_root, sync, sysctl, syslogd, tac,
-        tail, tar, tee, telnet, telnetd, test, tftp, tftpd, time, timeout,
-        top, touch, tr, traceroute, traceroute6, true, tty, ttysize, tunctl,
-        udhcpc, udhcpd, umount, uname, unexpand, uniq, unix2dos, unlzma,
-        unlzop, unxz, unzip, uptime, usleep, uudecode, uuencode, vconfig,
-        vi, vlock, volname, wall, watch, watchdog, wc, wget, which, who,
-        whoami, xargs, xz, xzcat, yes, zcat, zcip</code></pre>
+        tail, tar, tcpsvd, tee, telnet, telnetd, test, tftp, tftpd, time,
+        timeout, top, touch, tr, traceroute, traceroute6, true, tty,
+        ttysize, tunctl, udhcpc, udhcpd, udpsvd, umount, uname, unexpand,
+        uniq, unix2dos, unlzma, unlzop, unxz, unzip, uptime, usleep,
+        uudecode, uuencode, vconfig, vi, vlock, volname, wall, watch,
+        watchdog, wc, wget, which, who, whoami, xargs, xz, xzcat, yes, zcat,
+        zcip</code></pre>
 
 <h1 id="COMMAND-DESCRIPTIONS">COMMAND DESCRIPTIONS</h1>
 
@@ -4025,6 +4026,28 @@ Options:
         T       File with names to include</code></pre>
 
 </dd>
+<dt id="tcpsvd"><b>tcpsvd</b></dt>
+<dd>
+
+<p>tcpsvd [-hEv] [-c N] [-C N[:MSG]] [-b N] [-u USER] [-l NAME] IP PORT PROG</p>
+
+<p>Create TCP socket, bind to IP:PORT and listen for incoming connection. Run PROG for each connection.</p>
+
+<pre><code>        IP              IP to listen on. &#39;0&#39; = all
+        PORT            Port to listen on
+        PROG ARGS       Program to run
+        -l NAME         Local hostname (else looks up local hostname in DNS)
+        -u USER[:GRP]   Change to user/group after bind
+        -c N            Handle up to N connections simultaneously
+        -b N            Allow a backlog of approximately N TCP SYNs
+        -C N[:MSG]      Allow only up to N connections from the same IP.
+                        New connections from this IP address are closed
+                        immediately. MSG is written to the peer before close
+        -h              Look up peer&#39;s hostname
+        -E              Don&#39;t set up environment variables
+        -v              Verbose</code></pre>
+
+</dd>
 <dt id="tee"><b>tee</b></dt>
 <dd>
 
@@ -4308,6 +4331,24 @@ Options:
 <pre><code>        -f      Run in foreground
         -S      Log to syslog too
         -P N    Use port N (default 67)</code></pre>
+
+</dd>
+<dt id="udpsvd"><b>udpsvd</b></dt>
+<dd>
+
+<p>udpsvd [-hEv] [-c N] [-u USER] [-l NAME] IP PORT PROG</p>
+
+<p>Create UDP socket, bind to IP:PORT and wait for incoming packets. Run PROG for each packet, redirecting all further packets with same peer ip:port to it.</p>
+
+<pre><code>        IP              IP to listen on. &#39;0&#39; = all
+        PORT            Port to listen on
+        PROG ARGS       Program to run
+        -l NAME         Local hostname (else looks up local hostname in DNS)
+        -u USER[:GRP]   Change to user/group after bind
+        -c N            Handle up to N connections simultaneously
+        -h              Look up peer&#39;s hostname
+        -E              Don&#39;t set up environment variables
+        -v              Verbose</code></pre>
 
 </dd>
 <dt id="umount"><b>umount</b></dt>
