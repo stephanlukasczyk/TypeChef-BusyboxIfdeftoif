@@ -180,7 +180,7 @@ IF_DESKTOP(long long) int FAST_FUNC unpack_uncompress(unpack_info_t *info UNUSED
 	}
 	return status;
 }
-int uncompress_main(int argc, char **argv);
+int uncompress_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int uncompress_main(int argc UNUSED_PARAM, char **argv)
 {
 	getopt32(argv, "cf");
@@ -284,7 +284,7 @@ IF_DESKTOP(long long) int FAST_FUNC unpack_gunzip(unpack_info_t *info)
  * gzip: always save the original file name and time stamp (this is the default)
  * gunzip: restore the original file name and time stamp if present.
  */
-int gunzip_main(int argc, char **argv);
+int gunzip_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int gunzip_main(int argc UNUSED_PARAM, char **argv)
 {
 	getopt32(argv, "cfvdtn");
@@ -323,7 +323,7 @@ IF_DESKTOP(long long) int FAST_FUNC unpack_bunzip2(unpack_info_t *info UNUSED_PA
 {
 	return unpack_bz2_stream_prime(STDIN_FILENO, STDOUT_FILENO);
 }
-int bunzip2_main(int argc, char **argv);
+int bunzip2_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int bunzip2_main(int argc UNUSED_PARAM, char **argv)
 {
 	getopt32(argv, "cfvdt");
@@ -350,7 +350,7 @@ IF_DESKTOP(long long) int FAST_FUNC unpack_unlzma(unpack_info_t *info UNUSED_PAR
 {
 	return unpack_lzma_stream(STDIN_FILENO, STDOUT_FILENO);
 }
-int unlzma_main(int argc, char **argv);
+int unlzma_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int unlzma_main(int argc UNUSED_PARAM, char **argv)
 {
 	IF_LZMA(int opts =) getopt32(argv, "cfvdt");
@@ -384,7 +384,7 @@ IF_DESKTOP(long long) int FAST_FUNC unpack_unxz(unpack_info_t *info UNUSED_PARAM
 	}
 	return unpack_xz_stream(STDIN_FILENO, STDOUT_FILENO);
 }
-int unxz_main(int argc, char **argv);
+int unxz_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int unxz_main(int argc UNUSED_PARAM, char **argv)
 {
 	IF_XZ(int opts =) getopt32(argv, "cfvdt");

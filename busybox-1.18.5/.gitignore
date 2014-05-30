@@ -5,8 +5,6 @@
 *.o.*
 *.a
 *.s
-*.cmd
-
 
 #
 # Never ignore these
@@ -33,9 +31,5 @@
 core
 .gdb_history
 .gdbinit
-*.err
-*.dbg
-*.pi
-*.time
-*_ifdeftoif.c
 *_orig.c
+*_ifdeftoif.c
