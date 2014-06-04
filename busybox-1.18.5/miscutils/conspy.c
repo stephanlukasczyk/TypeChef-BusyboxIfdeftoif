@@ -341,7 +341,7 @@ static NOINLINE void start_shell_in_child(const char* tty_name)
 	}
 }
 
-int conspy_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int conspy_main(int argc, char **argv);
 int conspy_main(int argc UNUSED_PARAM, char **argv)
 {
 	char tty_name[sizeof("/dev/ttyNN")];

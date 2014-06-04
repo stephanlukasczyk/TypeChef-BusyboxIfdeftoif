@@ -40,7 +40,7 @@ static const char env_longopts[] ALIGN1 =
 	;
 #endif
 
-int env_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int env_main(int argc, char **argv);
 int env_main(int argc UNUSED_PARAM, char **argv)
 {
 	unsigned opts;

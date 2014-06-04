@@ -49,7 +49,7 @@ static void strrev(CHAR_T *s, int len)
 	}
 }
 
-int rev_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int rev_main(int argc, char **argv);
 int rev_main(int argc UNUSED_PARAM, char **argv)
 {
 	int retval;

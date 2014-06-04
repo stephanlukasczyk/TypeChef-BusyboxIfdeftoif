@@ -41,7 +41,7 @@ static void get_response_or_say_and_die(int fd, const char *errmsg)
 	}
 }
 
-int lpqr_main(int argc, char *argv[]) MAIN_EXTERNALLY_VISIBLE;
+int lpqr_main(int argc, char *argv[]);
 int lpqr_main(int argc UNUSED_PARAM, char *argv[])
 {
 	enum {

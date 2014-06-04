@@ -36,7 +36,7 @@
 //usage:	)
 //usage:#endif
 
-int insmod_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int insmod_main(int argc, char **argv);
 int insmod_main(int argc UNUSED_PARAM, char **argv)
 {
 	char *filename;

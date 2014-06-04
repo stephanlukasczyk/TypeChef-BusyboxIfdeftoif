@@ -12,7 +12,7 @@
 
 #include "libbb.h"
 
-int tee_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int tee_main(int argc, char **argv);
 int tee_main(int argc, char **argv)
 {
 	const char *mode = "w\0a";

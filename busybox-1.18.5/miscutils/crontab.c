@@ -66,7 +66,7 @@ static int open_as_user(const struct passwd *pas, const char *file)
 	_exit(safe_read(xopen(file, O_RDONLY), &c, 1) < 0);
 }
 
-int crontab_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int crontab_main(int argc, char **argv);
 int crontab_main(int argc UNUSED_PARAM, char **argv)
 {
 	const struct passwd *pas;

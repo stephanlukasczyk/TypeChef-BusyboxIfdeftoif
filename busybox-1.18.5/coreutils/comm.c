@@ -36,7 +36,7 @@ static void writeline(char *line, int class)
 	puts(line);
 }
 
-int comm_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int comm_main(int argc, char **argv);
 int comm_main(int argc UNUSED_PARAM, char **argv)
 {
 	char *thisline[2];

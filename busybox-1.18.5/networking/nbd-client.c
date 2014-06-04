@@ -42,7 +42,7 @@
 //Note, that kernel 2.4.2 and older ones do not work correctly with
 //blocksizes other than 1024 without patches
 
-int nbdclient_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int nbdclient_main(int argc, char **argv);
 int nbdclient_main(int argc, char **argv)
 {
 	unsigned long timeout = 0;

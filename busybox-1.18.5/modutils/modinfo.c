@@ -114,7 +114,7 @@ static void modinfo(const char *path, const char *version,
 //usage:#define modinfo_example_usage
 //usage:       "$ modinfo -F vermagic loop\n"
 
-int modinfo_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int modinfo_main(int argc, char **argv);
 int modinfo_main(int argc UNUSED_PARAM, char **argv)
 {
 	struct modinfo_env env;

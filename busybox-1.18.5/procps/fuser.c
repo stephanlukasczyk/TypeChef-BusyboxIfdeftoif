@@ -216,7 +216,7 @@ static void scan_proc_pids(void)
 	closedir(d);
 }
 
-int fuser_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int fuser_main(int argc, char **argv);
 int fuser_main(int argc UNUSED_PARAM, char **argv)
 {
 	pid_list *plist;

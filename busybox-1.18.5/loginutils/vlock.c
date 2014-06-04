@@ -34,7 +34,7 @@ static void acquire_vt(int signo UNUSED_PARAM)
 }
 #endif
 
-int vlock_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int vlock_main(int argc, char **argv);
 int vlock_main(int argc UNUSED_PARAM, char **argv)
 {
 #ifdef __linux__

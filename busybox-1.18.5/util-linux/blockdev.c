@@ -122,7 +122,7 @@ static const struct bdc *find_cmd(const char *s)
 	bb_show_usage();
 }
 
-int blockdev_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int blockdev_main(int argc, char **argv);
 int blockdev_main(int argc, char **argv)
 {
 	const struct bdc *bdcmd;

@@ -653,7 +653,7 @@ static void do_info(const char *file, int FAST_FUNC (*proc)(char *))
 	fclose(procinfo);
 }
 
-int netstat_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int netstat_main(int argc, char **argv);
 int netstat_main(int argc UNUSED_PARAM, char **argv)
 {
 	unsigned opt;

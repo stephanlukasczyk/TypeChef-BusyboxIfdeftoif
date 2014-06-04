@@ -50,7 +50,7 @@ static void check_tainted(void)
 static void check_tainted(void) { putchar('\n'); }
 #endif
 
-int lsmod_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int lsmod_main(int argc, char **argv);
 int lsmod_main(int argc UNUSED_PARAM, char **argv UNUSED_PARAM)
 {
 #if ENABLE_FEATURE_LSMOD_PRETTY_2_6_OUTPUT

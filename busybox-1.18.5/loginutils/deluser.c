@@ -11,7 +11,7 @@
  */
 #include "libbb.h"
 
-int deluser_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int deluser_main(int argc, char **argv);
 int deluser_main(int argc, char **argv)
 {
 	/* User or group name */

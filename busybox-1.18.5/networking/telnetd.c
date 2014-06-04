@@ -461,7 +461,7 @@ static void handle_sigchld(int sig UNUSED_PARAM)
 	errno = save_errno;
 }
 
-int telnetd_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int telnetd_main(int argc, char **argv);
 int telnetd_main(int argc UNUSED_PARAM, char **argv)
 {
 	fd_set rdfdset, wrfdset;

@@ -76,7 +76,7 @@ static void FAST_FUNC read_stduu(FILE *src_stream, FILE *dst_stream, int flags U
 #endif
 
 #if ENABLE_UUDECODE
-int uudecode_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int uudecode_main(int argc, char **argv);
 int uudecode_main(int argc UNUSED_PARAM, char **argv)
 {
 	FILE *src_stream;
@@ -152,7 +152,7 @@ int uudecode_main(int argc UNUSED_PARAM, char **argv)
 ////usage:     "\n	-i	When decoding, ignore non-alphabet characters"
 
 #if ENABLE_BASE64
-int base64_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int base64_main(int argc, char **argv);
 int base64_main(int argc UNUSED_PARAM, char **argv)
 {
 	FILE *src_stream;

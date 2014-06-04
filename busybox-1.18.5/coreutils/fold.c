@@ -52,7 +52,7 @@ static void write2stdout(const void *buf, unsigned size)
 	fwrite(buf, 1, size, stdout);
 }
 
-int fold_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int fold_main(int argc, char **argv);
 int fold_main(int argc UNUSED_PARAM, char **argv)
 {
 	char *line_out = NULL;

@@ -333,7 +333,7 @@ static void finalize(char *tempdir, const char *prog)
 //usage:     "\ninit: start background logging; stop when getty/xdm is seen (for init scripts)"
 //usage:     "\nUnder PID 1: as init, then exec $bootchart_init, /init, /sbin/init"
 
-int bootchartd_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int bootchartd_main(int argc, char **argv);
 int bootchartd_main(int argc UNUSED_PARAM, char **argv)
 {
 	unsigned sample_period_us;

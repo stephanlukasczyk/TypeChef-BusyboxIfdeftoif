@@ -87,7 +87,7 @@ static int FAST_FUNC fileAction(
 	return TRUE;
 }
 
-int lspci_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int lspci_main(int argc, char **argv);
 int lspci_main(int argc UNUSED_PARAM, char **argv)
 {
 	getopt32(argv, "m" /*non-compat:*/ "k" /*ignored:*/ "nv");

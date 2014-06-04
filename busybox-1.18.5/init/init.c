@@ -954,7 +954,7 @@ static int check_delayed_sigs(void)
 	}
 }
 
-int init_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int init_main(int argc, char **argv);
 int init_main(int argc UNUSED_PARAM, char **argv)
 {
 	if (argv[1] && strcmp(argv[1], "-q") == 0) {

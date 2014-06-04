@@ -164,7 +164,7 @@ static void cut_file(FILE *file, char delim, const struct cut_list *cut_lists, u
 	}
 }
 
-int cut_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int cut_main(int argc, char **argv);
 int cut_main(int argc UNUSED_PARAM, char **argv)
 {
 	/* growable array holding a series of lists */

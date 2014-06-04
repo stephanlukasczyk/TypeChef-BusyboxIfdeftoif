@@ -53,7 +53,7 @@ enum {
 	MASK_BITS = sizeof(mask_names) - 1
 };
 
-int inotifyd_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int inotifyd_main(int argc, char **argv);
 int inotifyd_main(int argc, char **argv)
 {
 	int n;

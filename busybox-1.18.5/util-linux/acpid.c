@@ -180,7 +180,7 @@ static void parse_map_file(const char *filename)
  * acpid [-c conf_dir] [-r conf_file ] [-a map_file ] [-l log_file] [-e proc_event_file]
  */
 
-int acpid_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int acpid_main(int argc, char **argv);
 int acpid_main(int argc UNUSED_PARAM, char **argv)
 {
 	struct input_event ev;

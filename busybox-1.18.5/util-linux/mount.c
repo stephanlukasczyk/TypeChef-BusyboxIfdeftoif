@@ -1804,7 +1804,7 @@ static int match_opt(const char *fs_opt_in, const char *O_opt)
 
 // Parse options, if necessary parse fstab/mtab, and call singlemount for
 // each directory to be mounted.
-int mount_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int mount_main(int argc, char **argv);
 int mount_main(int argc UNUSED_PARAM, char **argv)
 {
 	char *cmdopts = xzalloc(1);

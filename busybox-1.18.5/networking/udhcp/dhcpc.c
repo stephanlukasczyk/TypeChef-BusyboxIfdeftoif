@@ -927,7 +927,7 @@ static void client_background(void)
 //usage:	)
 //usage:	)
 
-int udhcpc_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int udhcpc_main(int argc, char **argv);
 int udhcpc_main(int argc UNUSED_PARAM, char **argv)
 {
 	uint8_t *temp, *message;

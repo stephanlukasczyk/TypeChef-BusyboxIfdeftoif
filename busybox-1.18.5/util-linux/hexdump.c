@@ -50,7 +50,7 @@ static const struct suffix_mult suffixes[] = {
 	{ "", 0 }
 };
 
-int hexdump_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int hexdump_main(int argc, char **argv);
 int hexdump_main(int argc, char **argv)
 {
 	dumper_t *dumper = alloc_dumper();

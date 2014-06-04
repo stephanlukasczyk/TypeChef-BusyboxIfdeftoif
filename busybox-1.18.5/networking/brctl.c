@@ -95,7 +95,7 @@ static void arm_ioctl(unsigned long *args,
 #endif
 
 
-int brctl_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int brctl_main(int argc, char **argv);
 int brctl_main(int argc UNUSED_PARAM, char **argv)
 {
 	static const char keywords[] ALIGN1 =

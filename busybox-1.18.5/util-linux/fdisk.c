@@ -2860,7 +2860,7 @@ unknown_command(int c)
 }
 #endif
 
-int fdisk_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int fdisk_main(int argc, char **argv);
 int fdisk_main(int argc UNUSED_PARAM, char **argv)
 {
 	unsigned opt;

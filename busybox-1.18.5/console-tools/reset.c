@@ -16,10 +16,10 @@
 #define ESC "\033"
 
 #if ENABLE_STTY
-int stty_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int stty_main(int argc, char **argv);
 #endif
 
-int reset_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int reset_main(int argc, char **argv);
 int reset_main(int argc UNUSED_PARAM, char **argv UNUSED_PARAM)
 {
 	static const char *const args[] = {

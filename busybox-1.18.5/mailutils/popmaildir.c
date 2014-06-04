@@ -35,7 +35,7 @@ static void pop3_check(const char *fmt, const char *param)
 	pop3_checkr(fmt, param, NULL);
 }
 
-int popmaildir_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int popmaildir_main(int argc, char **argv);
 int popmaildir_main(int argc UNUSED_PARAM, char **argv)
 {
 	char *buf;

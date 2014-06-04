@@ -37,7 +37,7 @@
  *      change the specified time: WORD is access, atime, or use
  */
 
-int touch_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int touch_main(int argc, char **argv);
 int touch_main(int argc UNUSED_PARAM, char **argv)
 {
 	int fd;

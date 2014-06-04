@@ -559,7 +559,7 @@ static void cookmode(void)
 		tcsetattr(0, TCSADRAIN, &G.termios_def);
 }
 
-int telnet_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int telnet_main(int argc, char **argv);
 int telnet_main(int argc UNUSED_PARAM, char **argv)
 {
 	char *host;

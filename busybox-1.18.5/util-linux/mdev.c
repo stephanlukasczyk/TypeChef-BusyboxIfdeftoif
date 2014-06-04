@@ -501,7 +501,7 @@ static void load_firmware(const char *firmware, const char *sysfs_path)
 	}
 }
 
-int mdev_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int mdev_main(int argc, char **argv);
 int mdev_main(int argc UNUSED_PARAM, char **argv)
 {
 	RESERVE_CONFIG_BUFFER(temp, PATH_MAX + SCRATCH_SIZE);

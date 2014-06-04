@@ -233,7 +233,7 @@ static void sigalrm_handler(int UNUSED_PARAM signum)
 {
 }
 
-int rx_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int rx_main(int argc, char **argv);
 int rx_main(int argc UNUSED_PARAM, char **argv)
 {
 	struct termios tty, orig_tty;

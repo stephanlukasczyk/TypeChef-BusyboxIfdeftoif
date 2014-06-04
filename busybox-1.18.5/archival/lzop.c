@@ -1058,7 +1058,7 @@ static IF_DESKTOP(long long) int FAST_FUNC pack_lzop(unpack_info_t *info UNUSED_
 	return do_lzo_compress();
 }
 
-int lzop_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int lzop_main(int argc, char **argv);
 int lzop_main(int argc UNUSED_PARAM, char **argv)
 {
 	getopt32(argv, OPTION_STRING);

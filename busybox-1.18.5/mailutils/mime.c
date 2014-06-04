@@ -99,7 +99,7 @@ Content-Transfer-Encoding: 7bit
 ...random junk added by mailing list robots and such...
 */
 
-int makemime_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int makemime_main(int argc, char **argv);
 int makemime_main(int argc UNUSED_PARAM, char **argv)
 {
 	llist_t *opt_headers = NULL, *l;
@@ -394,7 +394,7 @@ Usage: reformime [options]
     -O "header" - encode address list header using RFC 2047.
 */
 
-int reformime_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int reformime_main(int argc, char **argv);
 int reformime_main(int argc UNUSED_PARAM, char **argv)
 {
 	const char *opt_prefix = "";

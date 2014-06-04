@@ -47,7 +47,7 @@ static void gotsig(int sig UNUSED_PARAM)
 
 #define CONVERTED_TAB_SIZE 8
 
-int more_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int more_main(int argc, char **argv);
 int more_main(int argc UNUSED_PARAM, char **argv)
 {
 	int c = c; /* for compiler */

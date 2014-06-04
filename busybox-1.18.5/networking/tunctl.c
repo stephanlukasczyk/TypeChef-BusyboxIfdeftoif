@@ -23,7 +23,7 @@
 
 #if 1
 
-int tunctl_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int tunctl_main(int argc, char **argv);
 int tunctl_main(int argc UNUSED_PARAM, char **argv)
 {
 	struct ifreq ifr;
@@ -102,7 +102,7 @@ int tunctl_main(int argc UNUSED_PARAM, char **argv)
 
 /* -210 bytes: */
 
-int tunctl_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int tunctl_main(int argc, char **argv);
 int tunctl_main(int argc UNUSED_PARAM, char **argv)
 {
 	struct ifreq ifr;

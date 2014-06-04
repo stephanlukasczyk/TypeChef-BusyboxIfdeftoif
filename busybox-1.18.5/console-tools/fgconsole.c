@@ -17,7 +17,7 @@ struct vt_stat {
 };
 enum { VT_GETSTATE = 0x5603 }; /* get global vt state info */
 
-int fgconsole_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int fgconsole_main(int argc, char **argv);
 int fgconsole_main(int argc UNUSED_PARAM, char **argv UNUSED_PARAM)
 {
 	struct vt_stat vtstat;

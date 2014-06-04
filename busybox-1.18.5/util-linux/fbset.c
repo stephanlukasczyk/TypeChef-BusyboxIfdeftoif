@@ -363,7 +363,7 @@ static NOINLINE void showmode(struct fb_var_screeninfo *v)
 			v->blue.length, v->blue.offset, v->transp.length, v->transp.offset);
 }
 
-int fbset_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int fbset_main(int argc, char **argv);
 int fbset_main(int argc, char **argv)
 {
 	enum {

@@ -225,7 +225,7 @@ static int sysctl_handle_preload_file(const char *filename)
 	return 0;
 }
 
-int sysctl_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int sysctl_main(int argc, char **argv);
 int sysctl_main(int argc UNUSED_PARAM, char **argv)
 {
 	int retval;

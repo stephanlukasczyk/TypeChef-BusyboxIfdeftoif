@@ -154,7 +154,7 @@ static const char od_o2si[] ALIGN1 = {
 	0xb, 1, 8, 9,
 };
 
-int od_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int od_main(int argc, char **argv);
 int od_main(int argc, char **argv)
 {
 	int ch;

@@ -48,7 +48,7 @@
  */
 static const char dont_add[] ALIGN1 = "\n";
 
-int add_remove_shell_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int add_remove_shell_main(int argc, char **argv);
 int add_remove_shell_main(int argc UNUSED_PARAM, char **argv)
 {
 	FILE *orig_fp;

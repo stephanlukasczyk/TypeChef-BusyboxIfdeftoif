@@ -167,7 +167,7 @@ static const char date_longopts[] ALIGN1 =
 		;
 #endif
 
-int date_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int date_main(int argc, char **argv);
 int date_main(int argc UNUSED_PARAM, char **argv)
 {
 	struct timespec ts;

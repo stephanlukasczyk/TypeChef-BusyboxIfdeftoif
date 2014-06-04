@@ -181,7 +181,7 @@ static ALWAYS_INLINE unsigned random_delay_ms(unsigned secs)
 /**
  * main program
  */
-int zcip_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int zcip_main(int argc, char **argv);
 int zcip_main(int argc UNUSED_PARAM, char **argv)
 {
 	int state;

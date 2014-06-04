@@ -191,7 +191,7 @@ static void alarm_handler(int sig UNUSED_PARAM)
 	_exit(EXIT_SUCCESS);
 }
 
-int login_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int login_main(int argc, char **argv);
 int login_main(int argc UNUSED_PARAM, char **argv)
 {
 	enum {

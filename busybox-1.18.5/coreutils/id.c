@@ -103,7 +103,7 @@ static int get_groups(const char *username, gid_t rgid, gid_t *groups, int *n)
 	return m;
 }
 
-int id_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int id_main(int argc, char **argv);
 int id_main(int argc UNUSED_PARAM, char **argv)
 {
 	uid_t ruid;

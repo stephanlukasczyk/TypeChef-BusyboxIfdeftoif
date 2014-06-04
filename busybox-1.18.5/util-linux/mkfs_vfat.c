@@ -194,7 +194,7 @@ do { \
  *        [-R reserved-sectors]
  *        /dev/name [blocks]
  */
-int mkfs_vfat_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int mkfs_vfat_main(int argc, char **argv);
 int mkfs_vfat_main(int argc UNUSED_PARAM, char **argv)
 {
 	struct stat st;

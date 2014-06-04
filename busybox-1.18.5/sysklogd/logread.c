@@ -67,7 +67,7 @@ static void interrupted(int sig UNUSED_PARAM)
 	exit(EXIT_SUCCESS);
 }
 
-int logread_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int logread_main(int argc, char **argv);
 int logread_main(int argc UNUSED_PARAM, char **argv)
 {
 	unsigned cur;

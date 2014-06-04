@@ -909,7 +909,7 @@ static char **new_args(void)
 	return &args[num_args++];
 }
 
-int fsck_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int fsck_main(int argc, char **argv);
 int fsck_main(int argc UNUSED_PARAM, char **argv)
 {
 	int i, status;

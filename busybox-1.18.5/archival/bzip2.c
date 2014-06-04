@@ -137,7 +137,7 @@ IF_DESKTOP(long long) int FAST_FUNC compressStream(unpack_info_t *info UNUSED_PA
 	return total;
 }
 
-int bzip2_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int bzip2_main(int argc, char **argv);
 int bzip2_main(int argc UNUSED_PARAM, char **argv)
 {
 	unsigned opt;

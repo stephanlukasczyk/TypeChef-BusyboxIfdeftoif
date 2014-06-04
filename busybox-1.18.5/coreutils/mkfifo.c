@@ -15,7 +15,7 @@
 
 /* This is a NOEXEC applet. Be very careful! */
 
-int mkfifo_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int mkfifo_main(int argc, char **argv);
 int mkfifo_main(int argc UNUSED_PARAM, char **argv)
 {
 	mode_t mode;

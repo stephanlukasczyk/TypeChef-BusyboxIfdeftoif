@@ -71,7 +71,7 @@ static const unsigned short utsname_offset[] = {
 	offsetof(uname_info_t, os), /* -o */
 };
 
-int uname_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int uname_main(int argc, char **argv);
 int uname_main(int argc UNUSED_PARAM, char **argv)
 {
 #if ENABLE_LONG_OPTS

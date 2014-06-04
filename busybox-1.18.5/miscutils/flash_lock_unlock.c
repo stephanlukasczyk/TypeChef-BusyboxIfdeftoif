@@ -6,7 +6,7 @@
 #include "libbb.h"
 #include <mtd/mtd-user.h>
 
-int flash_lock_unlock_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int flash_lock_unlock_main(int argc, char **argv);
 int flash_lock_unlock_main(int argc UNUSED_PARAM, char **argv)
 {
 	/* note: fields in these structs are 32-bits.

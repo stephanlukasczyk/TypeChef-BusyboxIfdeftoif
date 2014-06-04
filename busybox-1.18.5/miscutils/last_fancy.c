@@ -151,7 +151,7 @@ static int is_runlevel_shutdown(struct utmp *ut)
 	return 0;
 }
 
-int last_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int last_main(int argc, char **argv);
 int last_main(int argc UNUSED_PARAM, char **argv)
 {
 	struct utmp ut;

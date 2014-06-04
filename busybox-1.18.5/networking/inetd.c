@@ -1095,7 +1095,7 @@ static void clean_up_and_exit(int sig UNUSED_PARAM)
 	exit(EXIT_SUCCESS);
 }
 
-int inetd_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int inetd_main(int argc, char **argv);
 int inetd_main(int argc UNUSED_PARAM, char **argv)
 {
 	struct sigaction sa, saved_pipe_handler;

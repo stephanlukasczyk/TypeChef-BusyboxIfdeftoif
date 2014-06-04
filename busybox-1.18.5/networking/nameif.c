@@ -132,7 +132,7 @@ static void delete_eth_table(ethtable_t *ch)
 void delete_eth_table(ethtable_t *ch);
 #endif
 
-int nameif_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int nameif_main(int argc, char **argv);
 int nameif_main(int argc, char **argv)
 {
 	ethtable_t *clist = NULL;

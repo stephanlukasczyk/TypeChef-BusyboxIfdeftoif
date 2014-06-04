@@ -38,7 +38,7 @@ static const char to_prio[] = "none\0realtime\0best-effort\0idle";
 
 #define IOPRIO_CLASS_SHIFT      13
 
-int ionice_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int ionice_main(int argc, char **argv);
 int ionice_main(int argc UNUSED_PARAM, char **argv)
 {
 	/* Defaults */

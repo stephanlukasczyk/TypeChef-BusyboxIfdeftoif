@@ -474,7 +474,7 @@ static void load_modules_dep(void)
 	config_close(p);
 }
 
-int modprobe_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int modprobe_main(int argc, char **argv);
 int modprobe_main(int argc UNUSED_PARAM, char **argv)
 {
 	struct utsname uts;

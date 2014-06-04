@@ -41,7 +41,7 @@ static const char mv_longopts[] ALIGN1 =
 #define OPT_FILEUTILS_INTERACTIVE 2
 #define OPT_FILEUTILS_NOCLOBBER   4
 
-int mv_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int mv_main(int argc, char **argv);
 int mv_main(int argc, char **argv)
 {
 	struct stat dest_stat;

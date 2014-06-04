@@ -89,7 +89,7 @@ enum {
 	NUM_WCS     = 5,
 };
 
-int wc_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int wc_main(int argc, char **argv);
 int wc_main(int argc UNUSED_PARAM, char **argv)
 {
 	const char *arg;

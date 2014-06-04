@@ -34,7 +34,7 @@
 #error Values for the ut_type field of struct utmp changed
 #endif
 
-int last_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int last_main(int argc, char **argv);
 int last_main(int argc UNUSED_PARAM, char **argv UNUSED_PARAM)
 {
 	struct utmp ut;

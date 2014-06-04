@@ -168,7 +168,7 @@ static void limit(int what, long l)
 		bb_perror_msg_and_die("setrlimit");
 }
 
-int chpst_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int chpst_main(int argc, char **argv);
 int chpst_main(int argc UNUSED_PARAM, char **argv)
 {
 	struct bb_uidgid_t ugid;

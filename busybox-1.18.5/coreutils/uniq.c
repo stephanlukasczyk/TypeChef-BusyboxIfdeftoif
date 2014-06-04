@@ -12,7 +12,7 @@
 
 #include "libbb.h"
 
-int uniq_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int uniq_main(int argc, char **argv);
 int uniq_main(int argc UNUSED_PARAM, char **argv)
 {
 	const char *input_filename;

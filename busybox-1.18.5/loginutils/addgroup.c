@@ -113,7 +113,7 @@ static const char addgroup_longopts[] ALIGN1 =
  * If called with two non-option arguments, addgroup
  * will add an existing user to an existing group.
  */
-int addgroup_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int addgroup_main(int argc, char **argv);
 int addgroup_main(int argc UNUSED_PARAM, char **argv)
 {
 	unsigned opts;

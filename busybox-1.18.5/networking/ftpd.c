@@ -1092,7 +1092,7 @@ enum {
 	OPT_w = (1 << ((!BB_MMU) * 2 + 2)) * ENABLE_FEATURE_FTP_WRITE,
 };
 
-int ftpd_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int ftpd_main(int argc, char **argv);
 #if !BB_MMU
 int ftpd_main(int argc, char **argv)
 #else

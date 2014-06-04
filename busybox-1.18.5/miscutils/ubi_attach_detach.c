@@ -47,7 +47,7 @@
 //usage:     "\nOptions:"
 //usage:     "\n	-d UBI_NUM	UBI device number"
 
-int ubi_attach_detach_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int ubi_attach_detach_main(int argc, char **argv);
 int ubi_attach_detach_main(int argc UNUSED_PARAM, char **argv)
 {
 	unsigned opts;

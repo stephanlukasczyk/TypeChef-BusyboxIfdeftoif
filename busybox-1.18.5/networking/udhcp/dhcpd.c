@@ -280,7 +280,7 @@ struct dyn_lease *g_leases;
 /* struct server_config_t server_config is in bb_common_bufsiz1 */
 
 
-int udhcpd_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int udhcpd_main(int argc, char **argv);
 int udhcpd_main(int argc UNUSED_PARAM, char **argv)
 {
 	fd_set rfds;

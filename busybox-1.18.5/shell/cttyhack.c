@@ -93,7 +93,7 @@ struct serial_struct {
 	int	reserved[1];
 };
 
-int cttyhack_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int cttyhack_main(int argc, char **argv);
 int cttyhack_main(int argc UNUSED_PARAM, char **argv)
 {
 	int fd;

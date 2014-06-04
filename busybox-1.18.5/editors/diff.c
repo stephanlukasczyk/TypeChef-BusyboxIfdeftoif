@@ -916,7 +916,7 @@ static const char diff_longopts[] ALIGN1 =
 	;
 #endif
 
-int diff_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int diff_main(int argc, char **argv);
 int diff_main(int argc UNUSED_PARAM, char **argv)
 {
 	int gotstdin = 0, i;

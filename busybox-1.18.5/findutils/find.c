@@ -1137,7 +1137,7 @@ static action*** parse_params(char **argv)
 //usage:       "$ find / -name passwd\n"
 //usage:       "/etc/passwd\n"
 
-int find_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int find_main(int argc, char **argv);
 int find_main(int argc UNUSED_PARAM, char **argv)
 {
 	static const char options[] ALIGN1 =

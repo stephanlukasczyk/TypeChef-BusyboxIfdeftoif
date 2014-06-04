@@ -10,7 +10,7 @@
 #include "libbb.h"
 #include "volume_id.h"
 
-int blkid_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int blkid_main(int argc, char **argv);
 int blkid_main(int argc UNUSED_PARAM, char **argv UNUSED_PARAM)
 {
 	display_uuid_cache();

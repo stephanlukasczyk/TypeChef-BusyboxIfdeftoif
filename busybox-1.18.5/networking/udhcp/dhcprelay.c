@@ -242,7 +242,7 @@ static void pass_to_client(struct dhcp_packet *p, int packet_len, int *fds)
 	xid_del(p->xid);
 }
 
-int dhcprelay_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int dhcprelay_main(int argc, char **argv);
 int dhcprelay_main(int argc, char **argv)
 {
 	struct sockaddr_in server_addr;

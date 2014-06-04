@@ -230,7 +230,7 @@ static void from_sys_clock(const char **pp_rtcname, int utc)
 #define HWCLOCK_OPT_SYSTOHC     0x10
 #define HWCLOCK_OPT_RTCFILE     0x20
 
-int hwclock_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int hwclock_main(int argc, char **argv);
 int hwclock_main(int argc UNUSED_PARAM, char **argv)
 {
 	const char *rtcname = NULL;

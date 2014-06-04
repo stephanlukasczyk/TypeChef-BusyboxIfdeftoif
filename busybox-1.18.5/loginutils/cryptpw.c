@@ -50,7 +50,7 @@ cryptpw was in bbox before this gem, so we retain it, and alias mkpasswd
 to cryptpw. -a option (alias for -m) came from cryptpw.
 */
 
-int cryptpw_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int cryptpw_main(int argc, char **argv);
 int cryptpw_main(int argc UNUSED_PARAM, char **argv)
 {
 	/* $N$ + sha_salt_16_bytes + NUL */

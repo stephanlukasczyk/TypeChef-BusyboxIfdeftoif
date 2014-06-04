@@ -10,7 +10,7 @@
 
 #include "libbb.h"
 
-int setsebool_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int setsebool_main(int argc, char **argv);
 int setsebool_main(int argc, char **argv)
 {
 	char *p;

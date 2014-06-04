@@ -15,7 +15,7 @@ enum {
 	OPT_l = (1 << 2),
 };
 
-int rfkill_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+int rfkill_main(int argc, char **argv);
 int rfkill_main(int argc UNUSED_PARAM, char **argv)
 {
 	struct rfkill_event event;
