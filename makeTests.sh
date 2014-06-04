@@ -30,12 +30,13 @@ filesToProcess|while read i; do
 	mv "$srcPath/$i.c" "$srcPath/${i}_orig.c"
 	mv "$srcPath/${i}_ifdeftoif.c" "$srcPath/$i.c"
 	cd $srcPath
+	baseFileName="${i##*/}"
 # Start making busybox
 	echo "-=Make=- $srcPath/$i.c"
-	make > ../$testOutputPath/$i.make 2>&1
+	make > ../$testOutputPath/$baseFileName.make 2>&1
 	cd testsuite
 # Start testing busybox
-	echo "-=Test=- $srcPath/$i.c"
+	echo "-=Test=- $srcPath/$baseFileName.c"
 	./runtest > ../$testOutputPath/$i.test 2>&1
 	cd $path
 # Swap files back to original state
