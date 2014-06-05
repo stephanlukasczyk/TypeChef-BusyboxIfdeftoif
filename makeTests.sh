@@ -1,5 +1,4 @@
-#!/bin/bash -e
-#!/bin/bash -vxe
+#!/bin/bash
 
 filesToProcess() {
   local listFile=busybox/busybox_files
@@ -37,7 +36,7 @@ filesToProcess|while read i; do
 	cd testsuite
 # Start testing busybox
 	echo "-=Test=- $srcPath/$baseFileName.c"
-	./runtest > ../$testOutputPath/$i.test 2>&1
+	./runtest > ../$testOutputPath/$baseFileName.test 2>&1
 	cd $path
 # Swap files back to original state
 	mv "$srcPath/$i.c" "$srcPath/${i}_ifdeftoif.c"
