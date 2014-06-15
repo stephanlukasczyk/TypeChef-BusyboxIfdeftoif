@@ -4,7 +4,7 @@ if [ -z "$jcppConfLoaded" ]; then
   source jcpp.conf
 fi
 
-typechefDir=../TypeChef
+herculesDir=../Hercules
 
 # What you should configure
 javaOpts='$javaOpts -Xmx2G -Xms128m -Xss10m'
@@ -37,7 +37,7 @@ shift
 # though!
 echo "==TypeChef $inp"
 
-bash -c "time $typechefDir/ifdeftoif.sh\
+bash -c "time $herculesDir/ifdeftoif.sh\
   $(for arg in $partialPreprocFlags "$@"; do echo -n "\"$arg\" "; done) \
   '$inp' 2> '$outErr' |tee '$outDbg'" \
   2> "$outTime" || true

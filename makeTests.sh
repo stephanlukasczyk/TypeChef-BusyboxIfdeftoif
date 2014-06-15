@@ -24,7 +24,7 @@ filesToProcess|while read i; do
     ./jcpp.sh $srcPath/$i.c $flags
 	
 # Create id2i_optionstruct
-	./../TypeChef/ifdeftoif.sh --featureConfig BusyBoxDefConfig.config
+	./../Hercules/ifdeftoif.sh --featureConfig BusyBoxDefConfig.config
 # Swap original and transformed file
 	mv "$srcPath/$i.c" "$srcPath/${i}_orig.c"
 	mv "$srcPath/${i}_ifdeftoif.c" "$srcPath/$i.c"

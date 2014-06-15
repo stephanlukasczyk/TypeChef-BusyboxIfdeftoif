@@ -9,6 +9,7 @@ systemSourceArchive="includes-redhat.tar.bz2"
 systemSourceFolder="systems/redhat/usr"
 redhatFolder="systems/redhat"
 typeChef="../TypeChef"
+hercules="../Hercules"
 
 
 # Check for busybox source files
@@ -44,11 +45,4 @@ if [ ! -d $systemSourceFolder ]; then
 	fi
 	# Extract system files
 	tar xvjf $systemSourceArchive -C $redhatFolder
-fi
-
-# Check for ifdeftoif.sh file
-if [ ! -f $typeChef/ifdeftoif.sh ]; then
-	cd $typeChef
-	./mkrun_ifdeftoif.sh
-	cd $path
 fi

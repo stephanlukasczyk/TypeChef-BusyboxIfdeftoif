@@ -22,7 +22,7 @@ echo "Starting process on file $1"
 ./jcpp.sh $filePath $flags
 
 ## Create id2i_optionstruct
-./../TypeChef/ifdeftoif.sh --featureConfig BusyBoxDefConfig.config
+./../Hercules/ifdeftoif.sh --featureConfig BusyBoxDefConfig.config
 
 ## Rename files
 mv "$filePath" "$renamedPath"
