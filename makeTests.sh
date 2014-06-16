@@ -19,7 +19,7 @@ fi
 
 ## Reset output
 filesToProcess|while read i; do
-  if [ ! -f $srcPath/$i$extension ]; then
+  if [ ! -f $testOutputPath/$baseFileName.test ]; then
 # this script run transforms the input C file using ifdeftoif transformations
     ./jcpp.sh $srcPath/$i.c $flags
 	
