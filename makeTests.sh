@@ -19,6 +19,7 @@ fi
 
 ## Reset output
 filesToProcess|while read i; do
+  baseFileName="${i##*/}"
   if [ ! -f $testOutputPath/$baseFileName.test ]; then
 # this script run transforms the input C file using ifdeftoif transformations
     ./jcpp.sh $srcPath/$i.c $flags
@@ -29,20 +30,20 @@ filesToProcess|while read i; do
 	mv "$srcPath/$i.c" "$srcPath/${i}_orig.c"
 	mv "$srcPath/${i}_ifdeftoif.c" "$srcPath/$i.c"
 	cd $srcPath
-	baseFileName="${i##*/}"
 # Start making busybox
-	echo "-=Make=- $srcPath/$i.c"
+	echo "-=Make=- $i.c"
 	make > ../$testOutputPath/$baseFileName.make 2>&1
 	cd testsuite
 # Start testing busybox
-	echo "-=Test=- $srcPath/$baseFileName.c"
-	./runtest > ../$testOutputPath/$baseFileName.test 2>&1
+	echo "-=Test=- $i.c"
+	./runtest > ../../$testOutputPath/$baseFileName.test 2>&1
 	cd $path
 # Swap files back to original state
 	mv "$srcPath/$i.c" "$srcPath/${i}_ifdeftoif.c"
 	mv "$srcPath/${i}_orig.c" "$srcPath/$i.c"
-	git reset --hard HEAD
-	echo "-=Done=- $srcPath/$i.c"
+	git checkout $srcPath/.config
+	#git reset --hard HEAD
+	echo "-=Done=- $i.c"
   else
     echo "Skipping $srcPath/$i.c"
   fi
