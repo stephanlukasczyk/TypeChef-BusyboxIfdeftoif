@@ -5,7 +5,7 @@ project
 target
 .idea
 .idea_modules/
-*.ifdeftoif
+*_ifdeftoif.c
 ifdeftoif_progress.txt
 *.tar.bz2
 renamings_Functions.txt
