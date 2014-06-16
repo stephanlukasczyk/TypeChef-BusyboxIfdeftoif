@@ -13,7 +13,7 @@
 
 /* This is a NOFORK applet. Be very careful! */
 
-int fsync_main(int argc, char **argv);
+int fsync_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int fsync_main(int argc UNUSED_PARAM, char **argv)
 {
 	int status;

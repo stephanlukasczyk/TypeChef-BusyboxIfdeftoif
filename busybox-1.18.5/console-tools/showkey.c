@@ -42,7 +42,7 @@ static void xset1(struct termios *t)
 	}
 }
 
-int showkey_main(int argc, char **argv);
+int showkey_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int showkey_main(int argc UNUSED_PARAM, char **argv)
 {
 	enum {

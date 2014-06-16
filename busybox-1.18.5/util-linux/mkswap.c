@@ -77,7 +77,7 @@ struct BUG_sizes {
 /* Stored without terminating NUL */
 static const char SWAPSPACE2[sizeof("SWAPSPACE2")-1] ALIGN1 = "SWAPSPACE2";
 
-int mkswap_main(int argc, char **argv);
+int mkswap_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int mkswap_main(int argc UNUSED_PARAM, char **argv)
 {
 	int fd;

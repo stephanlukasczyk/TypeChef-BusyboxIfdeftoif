@@ -191,7 +191,7 @@ static void FAST_FUNC header_verbose_list_ar(const file_header_t *file_header)
 #define AR_CMD_EXTRACT          (1 << 5)
 #define AR_CMD_INSERT           (1 << 6)
 
-int ar_main(int argc, char **argv);
+int ar_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int ar_main(int argc UNUSED_PARAM, char **argv)
 {
 	archive_handle_t *archive_handle;

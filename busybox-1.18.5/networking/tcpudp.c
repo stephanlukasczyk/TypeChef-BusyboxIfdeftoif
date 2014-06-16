@@ -162,7 +162,7 @@ static void sig_child_handler(int sig UNUSED_PARAM)
 		connection_status();
 }
 
-int tcpudpsvd_main(int argc, char **argv);
+int tcpudpsvd_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int tcpudpsvd_main(int argc UNUSED_PARAM, char **argv)
 {
 	char *str_C, *str_t;

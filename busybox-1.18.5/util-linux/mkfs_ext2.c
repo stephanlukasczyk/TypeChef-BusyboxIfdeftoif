@@ -181,7 +181,7 @@ enum {
 	//OPT_V = 1 << 25,	// -V version. bbox applets don't support that
 };
 
-int mkfs_ext2_main(int argc, char **argv);
+int mkfs_ext2_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int mkfs_ext2_main(int argc UNUSED_PARAM, char **argv)
 {
 	unsigned i, pos, n;

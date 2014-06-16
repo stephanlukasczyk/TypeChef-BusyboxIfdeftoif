@@ -170,7 +170,7 @@ enum {
 	OPT_C = (1 << 9), /* -C,--config etc_modules_conf: ignored */
 };
 
-int depmod_main(int argc, char **argv);
+int depmod_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int depmod_main(int argc UNUSED_PARAM, char **argv)
 {
 	module_info *modules, *m, *dep;

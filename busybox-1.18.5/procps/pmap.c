@@ -90,7 +90,7 @@ static int procps_get_maps(pid_t pid, unsigned opt)
 	return 0;
 }
 
-int pmap_main(int argc, char **argv);
+int pmap_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int pmap_main(int argc UNUSED_PARAM, char **argv)
 {
 	unsigned opts;

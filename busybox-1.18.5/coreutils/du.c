@@ -150,7 +150,7 @@ static unsigned long du(const char *filename)
 	return sum;
 }
 
-int du_main(int argc, char **argv);
+int du_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int du_main(int argc UNUSED_PARAM, char **argv)
 {
 	unsigned long total;

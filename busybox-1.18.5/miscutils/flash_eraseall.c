@@ -52,7 +52,7 @@ static void show_progress(mtd_info_t *meminfo, erase_info_t *erase)
 	fflush_all();
 }
 
-int flash_eraseall_main(int argc, char **argv);
+int flash_eraseall_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int flash_eraseall_main(int argc UNUSED_PARAM, char **argv)
 {
 	struct jffs2_unknown_node cleanmarker;

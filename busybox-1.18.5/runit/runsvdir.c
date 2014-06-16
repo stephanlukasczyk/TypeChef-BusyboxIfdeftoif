@@ -208,7 +208,7 @@ static NOINLINE int do_rescan(void)
 	return need_rescan;
 }
 
-int runsvdir_main(int argc, char **argv);
+int runsvdir_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int runsvdir_main(int argc UNUSED_PARAM, char **argv)
 {
 	struct stat s;

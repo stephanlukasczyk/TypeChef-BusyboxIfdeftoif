@@ -11,7 +11,7 @@
 
 #include "libbb.h"
 
-int setarch_main(int argc, char **argv);
+int setarch_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int setarch_main(int argc UNUSED_PARAM, char **argv)
 {
 	int pers;

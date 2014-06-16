@@ -9,7 +9,7 @@
  */
 #include "libbb.h"
 
-int scriptreplay_main(int argc, char **argv);
+int scriptreplay_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int scriptreplay_main(int argc UNUSED_PARAM, char **argv)
 {
 	const char *script = "typescript";

@@ -102,7 +102,7 @@ static void archivejoin(const char *sub, const char *name)
 //usage:#define smemcap_full_usage "\n\n"
 //usage:       "Collect memory usage data in /proc and write it to stdout"
 
-int smemcap_main(int argc, char **argv);
+int smemcap_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int smemcap_main(int argc UNUSED_PARAM, char **argv UNUSED_PARAM)
 {
 	DIR *d;

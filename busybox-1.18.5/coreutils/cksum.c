@@ -10,7 +10,7 @@
 
 /* This is a NOEXEC applet. Be very careful! */
 
-int cksum_main(int argc, char **argv);
+int cksum_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int cksum_main(int argc UNUSED_PARAM, char **argv)
 {
 	uint32_t *crc32_table = crc32_filltable(NULL, 1);

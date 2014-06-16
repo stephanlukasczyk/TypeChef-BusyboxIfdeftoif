@@ -2064,7 +2064,7 @@ static const char gzip_longopts[] ALIGN1 =
  * gunzip: restore the original file name and time stamp if present.
  */
 
-int gzip_main(int argc, char **argv);
+int gzip_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 #if ENABLE_GUNZIP
 int gzip_main(int argc, char **argv)
 #else

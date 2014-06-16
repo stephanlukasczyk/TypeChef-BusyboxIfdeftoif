@@ -14,7 +14,7 @@
 #define PRINT_OFFSET  4
 #define SIZE          8
 
-int strings_main(int argc, char **argv);
+int strings_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int strings_main(int argc UNUSED_PARAM, char **argv)
 {
 	int n, c, status = EXIT_SUCCESS;

@@ -26,7 +26,7 @@
 #include "libbb.h"
 #include "modutils.h"
 
-int rmmod_main(int argc, char **argv);
+int rmmod_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int rmmod_main(int argc UNUSED_PARAM, char **argv)
 {
 	int n;

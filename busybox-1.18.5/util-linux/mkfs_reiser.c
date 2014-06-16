@@ -144,7 +144,7 @@ enum {
 	//OPT_V = 1 << 12,	// -V version. bbox applets don't support that
 };
 
-int mkfs_reiser_main(int argc, char **argv);
+int mkfs_reiser_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int mkfs_reiser_main(int argc UNUSED_PARAM, char **argv)
 {
 	unsigned blocksize = 4096;

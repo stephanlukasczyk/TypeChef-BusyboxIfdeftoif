@@ -18,7 +18,7 @@
 #define PARENTS 0x01
 #define IGNORE_NON_EMPTY 0x02
 
-int rmdir_main(int argc, char **argv);
+int rmdir_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int rmdir_main(int argc UNUSED_PARAM, char **argv)
 {
 	int status = EXIT_SUCCESS;

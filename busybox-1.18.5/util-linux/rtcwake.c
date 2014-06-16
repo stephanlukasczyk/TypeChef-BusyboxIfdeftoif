@@ -96,7 +96,7 @@ static NOINLINE void setup_alarm(int fd, time_t *wakeup, time_t rtc_time)
 #define RTCWAKE_OPT_SECONDS      0x20
 #define RTCWAKE_OPT_TIME         0x40
 
-int rtcwake_main(int argc, char **argv);
+int rtcwake_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int rtcwake_main(int argc UNUSED_PARAM, char **argv)
 {
 	time_t rtc_time;

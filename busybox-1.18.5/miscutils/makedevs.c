@@ -23,7 +23,7 @@ Examples:
         makedevs /dev/ttyS c 4 66 2 63   ->  ttyS2-ttyS63
         makedevs /dev/hda b 3 0 0 8 s    ->  hda,hda1-hda8
 */
-int makedevs_main(int argc, char **argv);
+int makedevs_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int makedevs_main(int argc, char **argv)
 {
 	mode_t mode;
@@ -78,7 +78,7 @@ int makedevs_main(int argc, char **argv)
 
 /* Licensed under GPLv2 or later, see file LICENSE in this source tree. */
 
-int makedevs_main(int argc, char **argv);
+int makedevs_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int makedevs_main(int argc UNUSED_PARAM, char **argv)
 {
 	parser_t *parser;

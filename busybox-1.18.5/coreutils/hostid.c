@@ -13,7 +13,7 @@
 
 /* This is a NOFORK applet. Be very careful! */
 
-int hostid_main(int argc, char **argv);
+int hostid_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int hostid_main(int argc UNUSED_PARAM, char **argv UNUSED_PARAM)
 {
 	if (argv[1]) {

@@ -90,7 +90,7 @@ static size_t unescape(char *s, int *nocr)
 	return p - start;
 }
 
-int chat_main(int argc, char **argv);
+int chat_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int chat_main(int argc UNUSED_PARAM, char **argv)
 {
 	int record_fd = -1;

@@ -563,7 +563,7 @@ static void termios_final(struct options *op, struct termios *tp, struct chardat
 		bb_perror_msg_and_die("tcsetattr");
 }
 
-int getty_main(int argc, char **argv);
+int getty_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int getty_main(int argc UNUSED_PARAM, char **argv)
 {
 	int n;

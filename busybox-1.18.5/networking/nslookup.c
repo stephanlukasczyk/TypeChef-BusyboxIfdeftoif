@@ -149,7 +149,7 @@ static void set_default_dns(const char *server)
 #endif
 }
 
-int nslookup_main(int argc, char **argv);
+int nslookup_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int nslookup_main(int argc, char **argv)
 {
 	/* We allow 1 or 2 arguments.

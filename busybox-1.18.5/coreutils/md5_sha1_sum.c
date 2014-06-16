@@ -97,7 +97,7 @@ static uint8_t *hash_file(const char *filename)
 	return hash_value;
 }
 
-int md5_sha1_sum_main(int argc, char **argv);
+int md5_sha1_sum_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int md5_sha1_sum_main(int argc UNUSED_PARAM, char **argv)
 {
 	int return_value = EXIT_SUCCESS;

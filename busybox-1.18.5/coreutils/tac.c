@@ -25,7 +25,7 @@ struct lstring {
 	char buf[1];
 };
 
-int tac_main(int argc, char **argv);
+int tac_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int tac_main(int argc UNUSED_PARAM, char **argv)
 {
 	char **name;

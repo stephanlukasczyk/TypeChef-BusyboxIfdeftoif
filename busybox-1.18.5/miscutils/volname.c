@@ -29,7 +29,7 @@
  */
 #include "libbb.h"
 
-int volname_main(int argc, char **argv);
+int volname_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int volname_main(int argc UNUSED_PARAM, char **argv)
 {
 	int fd;

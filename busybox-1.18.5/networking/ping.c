@@ -775,7 +775,7 @@ static int common_ping_main(int opt, char **argv)
 #endif /* FEATURE_FANCY_PING */
 
 
-int ping_main(int argc, char **argv);
+int ping_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int ping_main(int argc UNUSED_PARAM, char **argv)
 {
 #if !ENABLE_FEATURE_FANCY_PING
@@ -786,7 +786,7 @@ int ping_main(int argc UNUSED_PARAM, char **argv)
 }
 
 #if ENABLE_PING6
-int ping6_main(int argc, char **argv);
+int ping6_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int ping6_main(int argc UNUSED_PARAM, char **argv)
 {
 # if !ENABLE_FEATURE_FANCY_PING

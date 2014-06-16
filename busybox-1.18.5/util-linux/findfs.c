@@ -11,7 +11,7 @@
 #include "libbb.h"
 #include "volume_id.h"
 
-int findfs_main(int argc, char **argv);
+int findfs_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int findfs_main(int argc UNUSED_PARAM, char **argv)
 {
 	char *dev = *++argv;

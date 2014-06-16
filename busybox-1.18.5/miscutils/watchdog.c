@@ -27,7 +27,7 @@ static void watchdog_shutdown(int sig UNUSED_PARAM)
 	_exit(EXIT_SUCCESS);
 }
 
-int watchdog_main(int argc, char **argv);
+int watchdog_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int watchdog_main(int argc, char **argv)
 {
 	static const struct suffix_mult suffixes[] = {

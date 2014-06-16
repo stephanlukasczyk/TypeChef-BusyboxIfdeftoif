@@ -1953,7 +1953,7 @@ static NOINLINE void ntp_init(char **argv)
 	);
 }
 
-int ntpd_main(int argc UNUSED_PARAM, char **argv);
+int ntpd_main(int argc UNUSED_PARAM, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int ntpd_main(int argc UNUSED_PARAM, char **argv)
 {
 #undef G

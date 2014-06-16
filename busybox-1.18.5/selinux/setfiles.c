@@ -487,7 +487,7 @@ static int process_one(char *name)
 	goto out;
 }
 
-int setfiles_main(int argc, char **argv);
+int setfiles_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int setfiles_main(int argc UNUSED_PARAM, char **argv)
 {
 	struct stat sb;

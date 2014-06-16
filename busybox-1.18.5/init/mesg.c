@@ -33,7 +33,7 @@
 #define S_IWGRP_OR_S_IWOTH  (S_IWGRP | S_IWOTH)
 #endif
 
-int mesg_main(int argc, char **argv);
+int mesg_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int mesg_main(int argc UNUSED_PARAM, char **argv)
 {
 	struct stat sb;

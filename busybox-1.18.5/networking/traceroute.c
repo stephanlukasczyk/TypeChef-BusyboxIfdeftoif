@@ -1194,14 +1194,14 @@ common_traceroute_main(int op, char **argv)
 	return 0;
 }
 
-int traceroute_main(int argc, char **argv);
+int traceroute_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int traceroute_main(int argc UNUSED_PARAM, char **argv)
 {
 	return common_traceroute_main(0, argv);
 }
 
 #if ENABLE_TRACEROUTE6
-int traceroute6_main(int argc, char **argv);
+int traceroute6_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int traceroute6_main(int argc UNUSED_PARAM, char **argv)
 {
 	return common_traceroute_main(OPT_IPV6, argv);

@@ -31,7 +31,7 @@ nohup: redirecting stderr to stdout
 #
 */
 
-int nohup_main(int argc, char **argv);
+int nohup_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int nohup_main(int argc UNUSED_PARAM, char **argv)
 {
 	const char *nohupout;

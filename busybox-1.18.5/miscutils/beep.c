@@ -28,7 +28,7 @@
 #define DELAY (0)
 #define REPETITIONS (1)
 
-int beep_main(int argc, char **argv);
+int beep_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int beep_main(int argc, char **argv)
 {
 	int speaker = get_console_fd_or_die();

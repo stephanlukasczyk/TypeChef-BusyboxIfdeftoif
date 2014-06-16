@@ -464,7 +464,7 @@ static int number_of_ALL_on_cmdline(char **argv)
 //usage:     "\n	-k	Use kb/s"
 //usage:     "\n	-m	Use Mb/s"
 
-int iostat_main(int argc, char **argv);
+int iostat_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int iostat_main(int argc, char **argv)
 {
 	int opt, dev_num;

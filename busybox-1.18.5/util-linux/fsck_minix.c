@@ -1198,7 +1198,7 @@ static void check2(void)
 void check2(void);
 #endif
 
-int fsck_minix_main(int argc, char **argv);
+int fsck_minix_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int fsck_minix_main(int argc UNUSED_PARAM, char **argv)
 {
 	struct termios tmp;

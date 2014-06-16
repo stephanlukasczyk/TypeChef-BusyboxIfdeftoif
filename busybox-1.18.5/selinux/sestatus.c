@@ -144,7 +144,7 @@ static void display_verbose(void)
 	}
 }
 
-int sestatus_main(int argc, char **argv);
+int sestatus_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int sestatus_main(int argc UNUSED_PARAM, char **argv)
 {
 	unsigned opts;

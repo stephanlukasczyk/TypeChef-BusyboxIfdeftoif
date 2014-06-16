@@ -253,7 +253,7 @@ static void unzip_extract(zip_header_t *zip_header, int dst_fd)
 	}
 }
 
-int unzip_main(int argc, char **argv);
+int unzip_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int unzip_main(int argc, char **argv)
 {
 	enum { O_PROMPT, O_NEVER, O_ALWAYS };

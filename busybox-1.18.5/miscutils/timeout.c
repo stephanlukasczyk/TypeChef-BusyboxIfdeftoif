@@ -30,7 +30,7 @@
 
 #include "libbb.h"
 
-int timeout_main(int argc, char **argv);
+int timeout_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int timeout_main(int argc UNUSED_PARAM, char **argv)
 {
 	int signo;

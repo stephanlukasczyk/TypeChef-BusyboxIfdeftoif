@@ -55,7 +55,7 @@ static const char ret_code_descript[] =
 	"clock not synchronized"
 ;
 
-int adjtimex_main(int argc, char **argv);
+int adjtimex_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int adjtimex_main(int argc UNUSED_PARAM, char **argv)
 {
 	enum {

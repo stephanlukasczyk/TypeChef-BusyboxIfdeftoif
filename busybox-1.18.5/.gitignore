@@ -1,11 +1,13 @@
 #
 # Kbuild ignores
 #
+.*
 *.o
 *.o.*
 *.a
 *.s
-*.cmd
+Kbuild
+Config.in
 
 #
 # Never ignore these
@@ -32,5 +34,3 @@
 core
 .gdb_history
 .gdbinit
-*_orig.c
-*_ifdeftoif.c

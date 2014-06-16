@@ -48,7 +48,7 @@ enum {
 	OPT_i = 1 << 2, // check interval
 };
 
-int tune2fs_main(int argc, char **argv);
+int tune2fs_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int tune2fs_main(int argc UNUSED_PARAM, char **argv)
 {
 	unsigned opts;

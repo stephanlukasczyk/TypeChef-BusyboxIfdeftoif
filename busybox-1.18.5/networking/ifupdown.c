@@ -1153,7 +1153,7 @@ static llist_t *read_iface_state(void)
 }
 
 
-int ifupdown_main(int argc, char **argv);
+int ifupdown_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int ifupdown_main(int argc UNUSED_PARAM, char **argv)
 {
 	int (*cmds)(struct interface_defn_t *);

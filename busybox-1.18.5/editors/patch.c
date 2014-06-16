@@ -345,7 +345,7 @@ done:
 // state 2: In hunk: counting initial context lines
 // state 3: In hunk: getting body
 
-int patch_main(int argc, char **argv);
+int patch_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int patch_main(int argc UNUSED_PARAM, char **argv)
 {
 	int opts;

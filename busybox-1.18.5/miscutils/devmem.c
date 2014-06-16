@@ -6,7 +6,7 @@
 
 #include "libbb.h"
 
-int devmem_main(int argc, char **argv);
+int devmem_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int devmem_main(int argc UNUSED_PARAM, char **argv)
 {
 	void *map_base, *virt_addr;

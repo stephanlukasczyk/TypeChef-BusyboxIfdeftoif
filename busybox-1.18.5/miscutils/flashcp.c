@@ -38,7 +38,7 @@ static void progress_newline(void)
 	bb_putchar('\n');
 }
 
-int flashcp_main(int argc, char **argv);
+int flashcp_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int flashcp_main(int argc UNUSED_PARAM, char **argv)
 {
 	int fd_f, fd_d; /* input file and mtd device file descriptors */

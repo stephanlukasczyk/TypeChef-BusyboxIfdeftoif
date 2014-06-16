@@ -64,7 +64,7 @@ static void rcptto(const char *s)
 		bb_error_msg("Bad recipient: <%s>", s);
 }
 
-int sendmail_main(int argc, char **argv);
+int sendmail_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int sendmail_main(int argc UNUSED_PARAM, char **argv)
 {
 	char *opt_connect = opt_connect;

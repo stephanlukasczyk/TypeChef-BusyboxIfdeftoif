@@ -1500,7 +1500,7 @@ static void sigwinch_handler(int sig UNUSED_PARAM)
 }
 #endif
 
-int less_main(int argc, char **argv);
+int less_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int less_main(int argc, char **argv)
 {
 	int keypress;

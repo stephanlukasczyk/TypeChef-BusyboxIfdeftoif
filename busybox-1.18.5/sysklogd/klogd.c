@@ -126,7 +126,7 @@ enum {
  * Should we open-code syslog() here to use correct facility?
  */
 
-int klogd_main(int argc, char **argv);
+int klogd_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int klogd_main(int argc UNUSED_PARAM, char **argv)
 {
 	int i = 0;

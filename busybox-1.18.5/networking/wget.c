@@ -553,7 +553,7 @@ static void NOINLINE retrieve_file_data(FILE *dfp, int output_fd)
 	progress_meter(PROGRESS_END);
 }
 
-int wget_main(int argc, char **argv);
+int wget_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int wget_main(int argc UNUSED_PARAM, char **argv)
 {
 	char buf[512];

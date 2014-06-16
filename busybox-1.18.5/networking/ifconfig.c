@@ -259,7 +259,7 @@ static int in_ether(const char *bufp, struct sockaddr *sap);
 /*
  * Our main function.
  */
-int ifconfig_main(int argc, char **argv);
+int ifconfig_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int ifconfig_main(int argc UNUSED_PARAM, char **argv)
 {
 	struct ifreq ifr;

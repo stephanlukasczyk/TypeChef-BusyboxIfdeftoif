@@ -285,7 +285,7 @@ static void do_load(int fd, unsigned char *buffer, size_t len)
 
 
 #if ENABLE_LOADFONT
-int loadfont_main(int argc, char **argv);
+int loadfont_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int loadfont_main(int argc UNUSED_PARAM, char **argv)
 {
 	size_t len;
@@ -362,7 +362,7 @@ static int ctoi(char *s)
 }
 #endif
 
-int setfont_main(int argc, char **argv);
+int setfont_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int setfont_main(int argc UNUSED_PARAM, char **argv)
 {
 	size_t len;

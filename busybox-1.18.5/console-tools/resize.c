@@ -20,7 +20,7 @@ onintr(int sig UNUSED_PARAM)
 	_exit(EXIT_FAILURE);
 }
 
-int resize_main(int argc, char **argv);
+int resize_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int resize_main(int argc UNUSED_PARAM, char **argv UNUSED_PARAM)
 {
 	struct termios new;

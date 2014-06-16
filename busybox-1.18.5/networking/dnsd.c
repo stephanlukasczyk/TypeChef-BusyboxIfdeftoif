@@ -473,7 +473,7 @@ static int process_packet(struct dns_entry *conf_data,
 	return answb - buf;
 }
 
-int dnsd_main(int argc, char **argv);
+int dnsd_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int dnsd_main(int argc UNUSED_PARAM, char **argv)
 {
 	const char *listen_interface = "0.0.0.0";

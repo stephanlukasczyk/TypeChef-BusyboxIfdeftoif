@@ -8,7 +8,7 @@
  */
 #include "libbb.h"
 
-int chvt_main(int argc, char **argv);
+int chvt_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int chvt_main(int argc UNUSED_PARAM, char **argv)
 {
 	int num = xatou_range(single_argv(argv), 1, 63);

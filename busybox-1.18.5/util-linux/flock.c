@@ -6,7 +6,7 @@
 #include <sys/file.h>
 #include "libbb.h"
 
-int flock_main(int argc, char **argv);
+int flock_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int flock_main(int argc UNUSED_PARAM, char **argv)
 {
 	int mode, opt, fd;

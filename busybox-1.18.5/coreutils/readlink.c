@@ -31,7 +31,7 @@
  * bbox supports: -f -n -v (fully), -q -s (accepts but ignores)
  */
 
-int readlink_main(int argc, char **argv);
+int readlink_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int readlink_main(int argc UNUSED_PARAM, char **argv)
 {
 	char *buf;

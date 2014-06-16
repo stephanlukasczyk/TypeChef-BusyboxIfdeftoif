@@ -23,7 +23,7 @@
 //usage:#define yes_full_usage "\n\n"
 //usage:       "Repeatedly output a line with STRING, or 'y'"
 
-int yes_main(int argc, char **argv);
+int yes_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int yes_main(int argc UNUSED_PARAM, char **argv)
 {
 	char **pp;

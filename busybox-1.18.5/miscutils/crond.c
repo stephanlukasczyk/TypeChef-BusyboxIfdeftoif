@@ -836,7 +836,7 @@ static int check_completions(void)
 	return num_still_running;
 }
 
-int crond_main(int argc, char **argv);
+int crond_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int crond_main(int argc UNUSED_PARAM, char **argv)
 {
 	time_t t2;
