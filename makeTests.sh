@@ -48,3 +48,7 @@ filesToProcess|while read i; do
     echo "Skipping $srcPath/$i.c"
   fi
 done
+
+##Remove all but last line of .test files
+cd $path/$testOutputPath
+ls *.test | xargs sed -i '$!d'
