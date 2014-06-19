@@ -14,7 +14,7 @@ srcPath="busybox-1.18.5"
 filePath=$(find $srcPath -name $1.c |head -1)
 baseFilePath="${filePath%.c}"
 ifdeftoifPath="${baseFilePath}_ifdeftoif.c"
-renamedPath="${baseFilePath}_orig.c"
+renamedPath="${baseFilePath}.orig"
 export partialPreprocFlags="--bdd -x CONFIG_ --include busybox/config.h -I $srcPath/include --featureModelDimacs busybox/featureModel.dimacs --recordTiming --parserstatistics --debugInterface --ifdeftoifstatistics"
 
 ## Reset output

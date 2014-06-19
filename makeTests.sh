@@ -27,7 +27,7 @@ filesToProcess|while read i; do
 # Create id2i_optionstruct
 	./../Hercules/ifdeftoif.sh --featureConfig BusyBoxDefConfig.config
 # Swap original and transformed file
-	mv "$srcPath/$i.c" "$srcPath/${i}_orig.c"
+	mv "$srcPath/$i.c" "$srcPath/${i}.orig"
 	mv "$srcPath/${i}_ifdeftoif.c" "$srcPath/$i.c"
 	cd $srcPath
 # Start making busybox
@@ -40,7 +40,7 @@ filesToProcess|while read i; do
 	cd $path
 # Swap files back to original state
 	mv "$srcPath/$i.c" "$srcPath/${i}_ifdeftoif.c"
-	mv "$srcPath/${i}_orig.c" "$srcPath/$i.c"
+	mv "$srcPath/${i}.orig" "$srcPath/$i.c"
 	git checkout $srcPath/.config
 	#git reset --hard HEAD
 	echo "-=Done=- $i.c"
