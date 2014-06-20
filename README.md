@@ -8,7 +8,6 @@ It does include BusyBox itself, header files and the KBuildMiner project.
 
 Preparation
 -----------
-HELLO WORLD
 1. `TypeChef` and `Hercules` folder must be at ".." relative to this project folder; see project [Hercules](https://github.com/joliebig/Hercules) to install both `TypeChef` and `Hercules`.
 2. Run prepareBusybox.sh to automatically download missing source files, system headers and create the required .pc files.
 3. Execute the busybox transformation with `./ifdeftoifStatistics.sh`.
