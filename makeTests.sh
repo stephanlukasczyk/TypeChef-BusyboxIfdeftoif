@@ -41,8 +41,8 @@ filesToProcess|while read i; do
 # Swap files back to original state
 	mv "$srcPath/$i.c" "$srcPath/${i}_ifdeftoif.c"
 	mv "$srcPath/${i}.orig" "$srcPath/$i.c"
-	git checkout $srcPath/.config
-	#git reset --hard HEAD
+	# Reset busybox-1.18.5 folder
+	git checkout -- $srcPath
 	echo "-=Done=- $i.c"
   else
     echo "Skipping $srcPath/$i.c"
