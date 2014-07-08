@@ -28,7 +28,6 @@ filesToProcess|while read i; do
 # Swap original and transformed file
 	mv "$srcPath/$i.c" "$srcPath/${i}.orig"
 	mv "$srcPath/${i}_ifdeftoif.c" "$srcPath/$i.c"
-  fi
 done
 
 
