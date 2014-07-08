@@ -29,26 +29,25 @@ filesToProcess|while read i; do
 # Swap original and transformed file
 	mv "$srcPath/$i.c" "$srcPath/${i}.orig"
 	mv "$srcPath/${i}_ifdeftoif.c" "$srcPath/$i.c"
-	cd $srcPath
-# Start making busybox
-	echo "-=Make=- $i.c"
-	make > ../$testOutputPath/$baseFileName.make 2>&1
-	cd testsuite
-# Start testing busybox
-	echo "-=Test=- $i.c"
-	./runtest > ../../$testOutputPath/$baseFileName.test 2>&1
-	cd $path
-# Swap files back to original state
-	mv "$srcPath/$i.c" "$srcPath/${i}_ifdeftoif.c"
-	mv "$srcPath/${i}.orig" "$srcPath/$i.c"
-	# Reset busybox-1.18.5 folder
-	git checkout -- $srcPath
-	echo "-=Done=- $i.c"
   else
     echo "Skipping $srcPath/$i.c"
   fi
 done
 
+
+cd $srcPath
+# Start making busybox
+echo "-=Make=-"
+make > ../$testOutputPath/total.make 2>&1
+cd testsuite
+# Start testing busybox
+echo "-=Test=- $i.c"
+./runtest > ../../$testOutputPath/total.test 2>&1
+cd $path
+# Reset busybox-1.18.5 folder
+git checkout -- $srcPath
+echo "-=Done=- $i.c"
+
 ##Remove all but last line of .test files
-cd $path/$testOutputPath
-ls *.test | xargs sed -i '$!d'
+#cd $path/$testOutputPath
+#ls *.test | xargs sed -i '$!d'
