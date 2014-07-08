@@ -20,7 +20,6 @@ fi
 ## Reset output
 filesToProcess|while read i; do
   baseFileName="${i##*/}"
-  if [ ! -f $testOutputPath/$baseFileName.test ]; then
 # this script run transforms the input C file using ifdeftoif transformations
     ./jcpp.sh $srcPath/$i.c $flags
 	
@@ -29,8 +28,6 @@ filesToProcess|while read i; do
 # Swap original and transformed file
 	mv "$srcPath/$i.c" "$srcPath/${i}.orig"
 	mv "$srcPath/${i}_ifdeftoif.c" "$srcPath/$i.c"
-  else
-    echo "Skipping $srcPath/$i.c"
   fi
 done
 
