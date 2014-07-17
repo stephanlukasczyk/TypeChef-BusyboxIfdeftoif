@@ -1,6 +1,8 @@
 #!/bin/bash -e
 #!/bin/bash -vxe
 
+START_TIME=$SECONDS
+
 filesToProcess() {
   local listFile=busybox/busybox_files
   cat $listFile
@@ -26,3 +28,6 @@ done
 
 ## Create id2i_optionstruct
 ./../Hercules/ifdeftoif.sh --featureConfig BusyBoxDefConfig.config
+
+ELAPSED_TIME=$(($SECONDS - $START_TIME))
+echo "$(($ELAPSED_TIME/60)) min $(($ELAPSED_TIME%60)) sec"

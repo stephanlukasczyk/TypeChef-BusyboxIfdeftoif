@@ -1,4 +1,5 @@
 #!/bin/bash
+START_TIME=$SECONDS
 
 filesToProcess() {
   local listFile=busybox/busybox_files
@@ -50,5 +51,8 @@ filesToProcess|while read i; do
 done
 
 ##Remove all but last line of .test files
-cd $path/$testOutputPath
-ls *.test | xargs sed -i '$!d'
+#cd $path/$testOutputPath
+#ls *.test | xargs sed -i '$!d'
+
+ELAPSED_TIME=$(($SECONDS - $START_TIME))
+echo "$(($ELAPSED_TIME/60)) min $(($ELAPSED_TIME%60)) sec"
