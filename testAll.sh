@@ -23,15 +23,16 @@ fi
 filesToProcess|while read i; do
   baseFileName="${i##*/}"
 # this script run transforms the input C file using ifdeftoif transformations
+  if [ ! -f $srcPath/${i}_ifdeftoif.c ]; then
     ./jcpp.sh $srcPath/$i.c $flags
-	
-# Create id2i_optionstruct
-	./../Hercules/ifdeftoif.sh --featureConfig BusyBoxDefConfig.config
+  fi
 # Swap original and transformed file
 	mv "$srcPath/$i.c" "$srcPath/${i}.orig"
 	mv "$srcPath/${i}_ifdeftoif.c" "$srcPath/$i.c"
 done
 
+# Create id2i_optionstruct
+./../Hercules/ifdeftoif.sh --featureConfig BusyBoxDefConfig.config
 
 cd $srcPath
 # Start making busybox
