@@ -26,7 +26,7 @@ fi
 
 # Check for run.sh file
 if [ ! -f $mkRun ]; then
-	java -Xmx1024M -Xss256M -jar sbt-launch.jar mkrun
+	java -Xmx1024M -Xss256M -XX:PermSize=256M -XX:MaxPermSize=512M -jar sbt-launch.jar mkrun
 fi
 
 # Prepare busybox script, creates presence condition files
