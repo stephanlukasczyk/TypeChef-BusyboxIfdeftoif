@@ -12,3 +12,4 @@ find ../ifdeftoif/ -name "top_level_statistics.csv" |while read i; do echo $i; r
 find ../ifdeftoif/ -name "statistics.csv" |while read i; do echo $i; rm $i; done
 find ../ifdeftoif/ -name "featureMap.csv" |while read i; do echo $i; rm $i; done
 find ../ifdeftoif/ -name "skipped_duplications.txt" |while read i; do echo $i; rm $i; done
+find ../ifdeftoif/ -name "external_declarations.txt" |while read i; do echo $i; rm $i; done
