@@ -4,7 +4,7 @@ version := "0.3.4"
 
 scalaVersion := "2.10.4"
 
-libraryDependencies += "de.fosd.typechef" % "frontend_2.10" % "0.3.6"
+libraryDependencies += "de.fosd.typechef" % "frontend_2.10" % "0.3.7"
 
 TaskKey[File]("mkrun") <<= (baseDirectory, fullClasspath in Runtime, mainClass in Runtime) map { (base, cp, main) =>
   val template = """#!/bin/sh
