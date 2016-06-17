@@ -2,9 +2,9 @@ name := "TypeChef Busybox Analysis"
 
 version := "0.3.4"
 
-scalaVersion := "2.10.4"
+scalaVersion := "2.11.7"
 
-libraryDependencies += "de.fosd.typechef" % "frontend_2.10" % "0.3.7"
+libraryDependencies += "de.fosd.typechef" % "frontend_2.11" % "0.4.1"
 
 TaskKey[File]("mkrun") <<= (baseDirectory, fullClasspath in Runtime, mainClass in Runtime) map { (base, cp, main) =>
   val template = """#!/bin/sh
