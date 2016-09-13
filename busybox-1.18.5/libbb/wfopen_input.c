@@ -12,7 +12,6 @@
  * we avoid testing everywhere by consolidating things in this routine.
  */
 
-#include "libbb.h"
 
 FILE* FAST_FUNC fopen_or_warn_stdin(const char *filename)
 {

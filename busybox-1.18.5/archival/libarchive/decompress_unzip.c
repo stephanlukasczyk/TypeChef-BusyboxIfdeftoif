@@ -33,9 +33,6 @@
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  */
 
-#include <setjmp.h>
-#include "libbb.h"
-#include "archive.h"
 
 typedef struct huft_t {
 	unsigned char e;	/* number of extra bits or operation */

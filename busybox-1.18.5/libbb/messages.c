@@ -5,7 +5,6 @@
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  */
 
-#include "libbb.h"
 
 /* allow default system PATH to be extended via CFLAGS */
 #ifndef BB_ADDITIONAL_PATH
@@ -48,7 +47,6 @@ const int const_int_1 = 1;
  * and it will end up in bss */
 const int const_int_0 = 0;
 
-#include <utmp.h>
 /* This is usually something like "/var/adm/wtmp" or "/var/log/wtmp" */
 const char bb_path_wtmp_file[] ALIGN1 =
 #if defined _PATH_WTMP

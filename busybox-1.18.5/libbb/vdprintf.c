@@ -7,7 +7,6 @@
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  */
 
-#include "libbb.h"
 
 #if defined(__GLIBC__) && __GLIBC__ < 2
 int FAST_FUNC vdprintf(int d, const char *format, va_list ap)

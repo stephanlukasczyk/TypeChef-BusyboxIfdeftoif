@@ -39,7 +39,6 @@
 	of crypt do not truncate passwords.
 */
 
-#include "libbb.h"
 
 static int string_checker_helper(const char *p1, const char *p2) __attribute__ ((__pure__));
 

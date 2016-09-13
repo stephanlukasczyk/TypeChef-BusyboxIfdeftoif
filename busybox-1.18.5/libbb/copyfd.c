@@ -7,7 +7,6 @@
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  */
 
-#include "libbb.h"
 
 /* Used by NOFORK applets (e.g. cat) - must not use xmalloc.
  * size < 0 means "ignore write errors", used by tar --to-command

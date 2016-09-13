@@ -7,7 +7,6 @@
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */
 
-#include "libbb.h"
 
 #define type long long
 #define xstrtou(rest) xstrtoull##rest

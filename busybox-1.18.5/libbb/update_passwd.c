@@ -13,7 +13,6 @@
  *
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */
-#include "libbb.h"
 
 #if ENABLE_SELINUX
 static void check_selinux_update_passwd(const char *username)

@@ -8,7 +8,6 @@
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  */
 
-#include "libbb.h"
 
 /* From <linux/kd.h> */
 enum { KDGKBTYPE = 0x4B33 };  /* get keyboard type */

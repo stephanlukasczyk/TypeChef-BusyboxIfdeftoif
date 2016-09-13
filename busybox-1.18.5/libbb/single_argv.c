@@ -6,7 +6,6 @@
  *
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */
-#include "libbb.h"
 
 char* FAST_FUNC single_argv(char **argv)
 {

@@ -22,7 +22,6 @@
  * val.  Otherwise, pass -1 to get default permissions.
  */
 
-#include "libbb.h"
 
 /* This function is used from NOFORK applets. It must not allocate anything */
 

@@ -8,7 +8,6 @@
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  */
 
-#include "libbb.h"
 
 /* do nothing signal handler */
 static void askpass_timeout(int UNUSED_PARAM ignore)

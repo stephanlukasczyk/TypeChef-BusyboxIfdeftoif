@@ -6,7 +6,6 @@
  *
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  */
-#include "libbb.h"
 
 ssize_t FAST_FUNC safe_read(int fd, void *buf, size_t count)
 {

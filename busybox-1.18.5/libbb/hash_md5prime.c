@@ -72,7 +72,6 @@
  * by Erik Andersen to remove reentrance stuff...
  */
 
-#include "libbb.h"
 
 /* 1: fastest, 3: smallest */
 #if CONFIG_MD5_SIZE_VS_SPEED < 1

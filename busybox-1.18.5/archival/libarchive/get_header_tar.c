@@ -11,8 +11,6 @@
  *    http://www.opengroup.org/onlinepubs/007904975/utilities/pax.html
  */
 
-#include "libbb.h"
-#include "archive.h"
 
 typedef uint32_t aliased_uint32_t FIX_ALIASING;
 typedef off_t    aliased_off_t    FIX_ALIASING;

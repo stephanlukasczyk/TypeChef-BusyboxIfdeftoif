@@ -22,7 +22,6 @@
  * TODO: move xmalloc() and xatonum() here.
  */
 
-#include "libbb.h"
 
 /* Turn on nonblocking I/O on a fd */
 int FAST_FUNC ndelay_on(int fd)

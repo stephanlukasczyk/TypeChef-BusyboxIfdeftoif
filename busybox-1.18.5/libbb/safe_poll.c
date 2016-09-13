@@ -7,7 +7,6 @@
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */
 
-#include "libbb.h"
 
 /* Wrapper which restarts poll on EINTR or ENOMEM.
  * On other errors does perror("poll") and returns.

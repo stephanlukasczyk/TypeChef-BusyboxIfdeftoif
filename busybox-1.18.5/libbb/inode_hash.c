@@ -8,7 +8,6 @@
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  */
 
-#include "libbb.h"
 
 typedef struct ino_dev_hash_bucket_struct {
 	struct ino_dev_hash_bucket_struct *next;

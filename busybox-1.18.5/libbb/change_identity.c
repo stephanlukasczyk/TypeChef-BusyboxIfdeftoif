@@ -28,7 +28,6 @@
  * SUCH DAMAGE.
  */
 
-#include "libbb.h"
 
 /* Become the user and group(s) specified by PW.  */
 void FAST_FUNC change_identity(const struct passwd *pw)

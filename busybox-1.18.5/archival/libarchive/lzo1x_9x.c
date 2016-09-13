@@ -36,13 +36,11 @@
    <markus@oberhumer.com>
    http://www.oberhumer.com/opensource/lzo/
 */
-#include "libbb.h"
 
 /* The following is probably only safe on Intel-compatible processors ... */
 #define LZO_UNALIGNED_OK_2
 #define LZO_UNALIGNED_OK_4
 
-#include "liblzo.h"
 
 #define LZO_MAX(a,b)        ((a) >= (b) ? (a) : (b))
 #define LZO_MIN(a,b)        ((a) <= (b) ? (a) : (b))

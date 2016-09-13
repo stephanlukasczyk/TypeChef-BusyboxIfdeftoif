@@ -7,7 +7,6 @@
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  */
 
-#include "libbb.h"
 
 /* Conversion table.  for base 64 */
 const char bb_uuenc_tbl_base64[65 + 2] ALIGN1 = {

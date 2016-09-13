@@ -6,7 +6,6 @@
  *
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  */
-#include "libbb.h"
 
 #define ZIPPED (ENABLE_FEATURE_SEAMLESS_LZMA \
 	|| ENABLE_FEATURE_SEAMLESS_BZ2 \

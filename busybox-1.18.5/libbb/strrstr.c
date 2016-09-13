@@ -8,11 +8,7 @@
  */
 
 #ifdef __DO_STRRSTR_TEST
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #else
-#include "libbb.h"
 #endif
 
 /*

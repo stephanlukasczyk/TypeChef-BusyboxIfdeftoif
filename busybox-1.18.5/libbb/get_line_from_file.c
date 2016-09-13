@@ -9,7 +9,6 @@
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  */
 
-#include "libbb.h"
 
 /* This function reads an entire line from a text file, up to a newline
  * or NUL byte, inclusive.  It returns a malloc'ed char * which

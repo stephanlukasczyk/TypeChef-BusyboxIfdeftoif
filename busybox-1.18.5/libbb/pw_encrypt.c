@@ -7,7 +7,6 @@
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  */
 
-#include "libbb.h"
 
 /* static const uint8_t ascii64[] =
  * "./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
@@ -65,10 +64,7 @@ to64(char *s, unsigned v, int n)
  * They were modified to not use static buffers.
  */
 
-#include "pw_encrypt_des.c"
-#include "pw_encrypt_md5.c"
 #if ENABLE_USE_BB_CRYPT_SHA
-#include "pw_encrypt_sha.c"
 #endif
 
 /* Other advanced crypt ids (TODO?): */

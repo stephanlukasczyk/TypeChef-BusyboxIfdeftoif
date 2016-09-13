@@ -6,7 +6,6 @@
  *
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */
-#include "libbb.h"
 
 void FAST_FUNC parse_datestr(const char *date_str, struct tm *ptm)
 {
@@ -171,7 +170,6 @@ time_t FAST_FUNC validate_tm_time(const char *date_str, struct tm *ptm)
 
 #if ENABLE_MONOTONIC_SYSCALL
 
-#include <sys/syscall.h>
 /* Old glibc (< 2.3.4) does not provide this constant. We use syscall
  * directly so this definition is safe. */
 #ifndef CLOCK_MONOTONIC

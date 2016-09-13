@@ -4,9 +4,6 @@
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  */
 
-#include "libbb.h"
-#include "archive.h"
-#include "ar.h"
 
 static unsigned read_num(const char *str, int base)
 {

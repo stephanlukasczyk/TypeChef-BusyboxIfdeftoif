@@ -6,8 +6,6 @@
  *
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */
-#include "libbb.h"
-#include <selinux/context.h>
 
 context_t FAST_FUNC set_security_context_component(security_context_t cur_context,
 					 char *user, char *role, char *type, char *range)

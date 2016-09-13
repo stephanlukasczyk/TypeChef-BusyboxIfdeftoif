@@ -7,7 +7,6 @@
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  */
 
-#include "libbb.h"
 
 struct speed_map {
 	unsigned short speed;
@@ -89,7 +88,6 @@ speed_t FAST_FUNC tty_value_to_baud(unsigned int value)
 
 #if 0
 /* testing code */
-#include <stdio.h>
 
 int main(void)
 {

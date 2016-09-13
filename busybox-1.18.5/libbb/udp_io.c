@@ -6,7 +6,6 @@
  *
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */
-#include "libbb.h"
 
 /*
  * This asks kernel to let us know dst addr/port of incoming packets

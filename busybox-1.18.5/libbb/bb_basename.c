@@ -7,7 +7,6 @@
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */
 
-#include "libbb.h"
 
 const char* FAST_FUNC bb_basename(const char *name)
 {

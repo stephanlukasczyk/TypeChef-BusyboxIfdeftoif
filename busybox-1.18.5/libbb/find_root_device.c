@@ -7,7 +7,6 @@
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  */
 
-#include "libbb.h"
 
 /* Find block device /dev/XXX which contains specified file
  * We handle /dev/dir/dir/dir too, at a cost of ~80 more bytes code */

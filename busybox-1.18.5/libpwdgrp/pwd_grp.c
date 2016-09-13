@@ -17,8 +17,6 @@
  *      large group member lists will cause error returns.
  */
 
-#include "libbb.h"
-#include <assert.h>
 
 #ifndef _PATH_SHADOW
 #define _PATH_SHADOW	"/etc/shadow"
@@ -266,7 +264,6 @@ int sgetspent_r(const char *string, struct spwd *result_buf,
 #define GETXXKEY_R_TEST(ENT)    (!strcmp((ENT)->pw_name, key))
 #define GETXXKEY_R_KEYTYPE      const char *__restrict
 #define GETXXKEY_R_PATHNAME     _PATH_PASSWD
-#include "pwd_grp_internal.c"
 
 #define GETXXKEY_R_FUNC         getgrnam_r
 #define GETXXKEY_R_PARSER       bb__parsegrent
@@ -274,7 +271,6 @@ int sgetspent_r(const char *string, struct spwd *result_buf,
 #define GETXXKEY_R_TEST(ENT)    (!strcmp((ENT)->gr_name, key))
 #define GETXXKEY_R_KEYTYPE      const char *__restrict
 #define GETXXKEY_R_PATHNAME     _PATH_GROUP
-#include "pwd_grp_internal.c"
 
 #if ENABLE_USE_BB_SHADOW
 #define GETXXKEY_R_FUNC         getspnam_r
@@ -283,7 +279,6 @@ int sgetspent_r(const char *string, struct spwd *result_buf,
 #define GETXXKEY_R_TEST(ENT)    (!strcmp((ENT)->sp_namp, key))
 #define GETXXKEY_R_KEYTYPE      const char *__restrict
 #define GETXXKEY_R_PATHNAME     _PATH_SHADOW
-#include "pwd_grp_internal.c"
 #endif
 
 #define GETXXKEY_R_FUNC         getpwuid_r
@@ -292,7 +287,6 @@ int sgetspent_r(const char *string, struct spwd *result_buf,
 #define GETXXKEY_R_TEST(ENT)    ((ENT)->pw_uid == key)
 #define GETXXKEY_R_KEYTYPE      uid_t
 #define GETXXKEY_R_PATHNAME     _PATH_PASSWD
-#include "pwd_grp_internal.c"
 
 #define GETXXKEY_R_FUNC         getgrgid_r
 #define GETXXKEY_R_PARSER       bb__parsegrent
@@ -300,7 +294,6 @@ int sgetspent_r(const char *string, struct spwd *result_buf,
 #define GETXXKEY_R_TEST(ENT)    ((ENT)->gr_gid == key)
 #define GETXXKEY_R_KEYTYPE      gid_t
 #define GETXXKEY_R_PATHNAME     _PATH_GROUP
-#include "pwd_grp_internal.c"
 
 /**********************************************************************/
 /* TODO: audit & stop using these in bbox, they pull in static buffers */

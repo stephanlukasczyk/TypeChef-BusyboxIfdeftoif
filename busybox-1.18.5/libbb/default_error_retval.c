@@ -13,6 +13,5 @@
  * that too seems silly.
  */
 
-#include "libbb.h"
 
 uint8_t xfunc_error_retval = EXIT_FAILURE;

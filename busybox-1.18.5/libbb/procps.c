@@ -9,7 +9,6 @@
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  */
 
-#include "libbb.h"
 
 
 typedef struct unsigned_to_name_map_t {

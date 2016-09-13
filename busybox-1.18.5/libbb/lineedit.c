@@ -39,8 +39,6 @@
  *
  * PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] '
  */
-#include "libbb.h"
-#include "unicode.h"
 
 #ifdef TEST
 # define ENABLE_FEATURE_EDITING 0
@@ -2470,7 +2468,6 @@ int FAST_FUNC read_line_input(const char* prompt, char* command, int maxsize)
 
 #ifdef TEST
 
-#include <locale.h>
 
 const char *applet_name = "debug stuff usage";
 

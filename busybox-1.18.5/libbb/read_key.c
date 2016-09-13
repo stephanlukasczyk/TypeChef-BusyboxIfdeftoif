@@ -7,7 +7,6 @@
  *
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */
-#include "libbb.h"
 
 int64_t FAST_FUNC read_key(int fd, char *buffer, int timeout)
 {

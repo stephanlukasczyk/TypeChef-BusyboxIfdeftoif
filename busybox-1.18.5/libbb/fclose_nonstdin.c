@@ -12,7 +12,6 @@
  * here to save a little space.
  */
 
-#include "libbb.h"
 
 int FAST_FUNC fclose_if_not_stdin(FILE *f)
 {

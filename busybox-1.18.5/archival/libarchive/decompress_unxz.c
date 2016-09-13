@@ -9,8 +9,6 @@
  * Copyright (C) 2010 Denys Vlasenko <vda.linux@googlemail.com>
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */
-#include "libbb.h"
-#include "archive.h"
 
 #define XZ_FUNC FAST_FUNC
 #define XZ_EXTERN static
@@ -33,9 +31,6 @@ static uint32_t xz_crc32(const uint8_t *buf, size_t size, uint32_t crc)
 #define put_unaligned_le32(val, buf) move_to_unaligned16(buf, SWAP_LE32(val))
 #define put_unaligned_be32(val, buf) move_to_unaligned16(buf, SWAP_BE32(val))
 
-#include "unxz/xz_dec_bcj.c"
-#include "unxz/xz_dec_lzma2.c"
-#include "unxz/xz_dec_stream.c"
 
 IF_DESKTOP(long long) int FAST_FUNC
 unpack_xz_stream(int src_fd, int dst_fd)

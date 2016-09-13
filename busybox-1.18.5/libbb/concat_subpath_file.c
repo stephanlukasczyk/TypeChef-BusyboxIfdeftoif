@@ -13,7 +13,6 @@
    and skipping "." and ".." directory entries
 */
 
-#include "libbb.h"
 
 char* FAST_FUNC concat_subpath_file(const char *path, const char *f)
 {

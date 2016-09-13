@@ -8,8 +8,6 @@
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */
 
-#include "libbb.h"
-#include "inet_common.h"
 
 int FAST_FUNC INET_resolve(const char *name, struct sockaddr_in *s_in, int hostfirst)
 {

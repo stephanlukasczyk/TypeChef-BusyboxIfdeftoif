@@ -10,7 +10,6 @@
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  */
 
-#include "libbb.h"
 
 /* Add data to the start of the linked list.  */
 void FAST_FUNC llist_add_to(llist_t **old_head, void *data)

@@ -26,9 +26,6 @@
  *
  * FEATURE_INSTALLER or FEATURE_SUID will still link printf routines in. :(
  */
-#include "busybox.h"
-#include <assert.h>
-#include <malloc.h>
 /* Try to pull in PAGE_SIZE */
 #ifdef __linux__
 # include <sys/user.h>
@@ -40,12 +37,10 @@
 
 /* Declare <applet>_main() */
 #define PROTOTYPES
-#include "applets.h"
 #undef PROTOTYPES
 
 
 /* Include generated applet names, pointers to <applet>_main, etc */
-#include "applet_tables.h"
 /* ...and if applet_tables generator says we have only one applet... */
 #ifdef SINGLE_APPLET_MAIN
 # undef ENABLE_FEATURE_INDIVIDUAL
@@ -55,7 +50,6 @@
 #endif
 
 
-#include "usage_compressed.h"
 
 #if ENABLE_SHOW_USAGE && !ENABLE_FEATURE_COMPRESS_USAGE
 static const char usage_messages[] ALIGN1 = UNPACKED_USAGE;

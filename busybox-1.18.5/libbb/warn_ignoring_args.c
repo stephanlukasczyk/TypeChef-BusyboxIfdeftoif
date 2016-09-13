@@ -6,7 +6,6 @@
  *
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  */
-#include "libbb.h"
 
 #if ENABLE_DESKTOP
 void FAST_FUNC bb_warn_ignoring_args(char *arg)

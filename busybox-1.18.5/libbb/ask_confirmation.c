@@ -10,7 +10,6 @@
 /* Read a line from stdin.  If the first non-whitespace char is 'y' or 'Y',
  * return 1.  Otherwise return 0.
  */
-#include "libbb.h"
 
 int FAST_FUNC bb_ask_confirmation(void)
 {

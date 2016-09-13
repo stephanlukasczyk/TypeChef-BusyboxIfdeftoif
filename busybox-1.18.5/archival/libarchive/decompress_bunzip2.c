@@ -39,8 +39,6 @@
 	Manuel
  */
 
-#include "libbb.h"
-#include "archive.h"
 
 /* Constants for Huffman coding */
 #define MAX_GROUPS          6

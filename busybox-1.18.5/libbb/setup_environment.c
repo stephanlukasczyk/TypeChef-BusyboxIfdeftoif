@@ -28,7 +28,6 @@
  * SUCH DAMAGE.
  */
 
-#include "libbb.h"
 
 void FAST_FUNC setup_environment(const char *shell, int flags, const struct passwd *pw)
 {

@@ -23,8 +23,6 @@
    If not, write to the Free Software Foundation, Inc.,
    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  */
-#include "libbb.h"
-#include "liblzo.h"
 
 #define D_BITS          14
 #define D_INDEX1(d,p)   d = DM(DMUL(0x21,DX3(p,5,5,6)) >> 5)
@@ -32,4 +30,3 @@
 
 #define DO_COMPRESS     lzo1x_1_compress
 
-#include "lzo1x_c.c"

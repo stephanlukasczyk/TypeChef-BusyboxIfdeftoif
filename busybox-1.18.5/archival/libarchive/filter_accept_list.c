@@ -5,8 +5,6 @@
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  */
 
-#include "libbb.h"
-#include "archive.h"
 
 /*
  * Accept names that are in the accept list, ignoring reject list.

@@ -8,7 +8,6 @@
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */
 
-#include "libbb.h"
 
 int FAST_FUNC create_icmp_socket(void)
 {

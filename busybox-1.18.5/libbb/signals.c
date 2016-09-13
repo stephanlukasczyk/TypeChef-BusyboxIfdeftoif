@@ -9,7 +9,6 @@
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */
 
-#include "libbb.h"
 
 /* All known arches use small ints for signals */
 smallint bb_got_signal;

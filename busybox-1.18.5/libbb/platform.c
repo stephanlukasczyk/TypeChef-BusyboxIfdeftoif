@@ -6,7 +6,6 @@
  *
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */
-#include "libbb.h"
 
 #ifndef HAVE_STRCHRNUL
 char* FAST_FUNC strchrnul(const char *s, int c)

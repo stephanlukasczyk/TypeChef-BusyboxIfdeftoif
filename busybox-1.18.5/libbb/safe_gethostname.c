@@ -24,8 +24,6 @@
  * SHOULD handle host names of up to 255 characters.
  */
 
-#include "libbb.h"
-#include <sys/utsname.h>
 
 /*
  * On success return the current malloced and NUL terminated hostname.

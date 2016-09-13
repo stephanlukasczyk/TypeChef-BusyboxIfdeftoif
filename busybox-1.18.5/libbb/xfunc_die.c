@@ -10,7 +10,6 @@
 /* Keeping it separate allows to NOT suck in stdio for VERY small applets.
  * Try building busybox with only "true" enabled... */
 
-#include "libbb.h"
 
 int die_sleep;
 #if ENABLE_FEATURE_PREFER_APPLETS || ENABLE_HUSH

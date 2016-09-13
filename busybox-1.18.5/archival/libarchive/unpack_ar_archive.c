@@ -3,9 +3,6 @@
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  */
 
-#include "libbb.h"
-#include "archive.h"
-#include "ar.h"
 
 void FAST_FUNC unpack_ar_archive(archive_handle_t *ar_archive)
 {

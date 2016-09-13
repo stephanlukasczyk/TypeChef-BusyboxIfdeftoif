@@ -7,8 +7,6 @@
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  */
 
-#include <mntent.h>
-#include "libbb.h"
 
 #if ENABLE_FEATURE_MTAB_SUPPORT
 void FAST_FUNC erase_mtab(const char *name)

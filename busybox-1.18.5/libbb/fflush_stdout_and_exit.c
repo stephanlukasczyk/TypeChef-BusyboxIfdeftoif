@@ -11,7 +11,6 @@
  * in an error state.
  */
 
-#include "libbb.h"
 
 void FAST_FUNC fflush_stdout_and_exit(int retval)
 {

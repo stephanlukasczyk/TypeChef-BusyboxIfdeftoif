@@ -3,7 +3,6 @@
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  */
 
-#include "libbb.h"
 
 /* returns the array index of the string */
 /* (index of first match is returned, or -1) */

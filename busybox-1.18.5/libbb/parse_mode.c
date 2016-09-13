@@ -9,7 +9,6 @@
 
 /* http://www.opengroup.org/onlinepubs/007904975/utilities/chmod.html */
 
-#include "libbb.h"
 
 /* This function is used from NOFORK applets. It must not allocate anything */
 

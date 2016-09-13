@@ -4,8 +4,6 @@
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */
 
-#include "libbb.h"
-#include "rtc_.h"
 
 #if ENABLE_FEATURE_HWCLOCK_ADJTIME_FHS
 # define ADJTIME_PATH "/var/lib/hwclock/adjtime"

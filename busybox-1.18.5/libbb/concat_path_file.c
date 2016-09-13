@@ -14,7 +14,6 @@
  * filename should not be NULL.
  */
 
-#include "libbb.h"
 
 char* FAST_FUNC concat_path_file(const char *path, const char *filename)
 {

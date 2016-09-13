@@ -6,8 +6,6 @@
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */
 
-#include "libbb.h"
-#include "archive.h"
 
 char FAST_FUNC get_header_tar_lzma(archive_handle_t *archive_handle)
 {

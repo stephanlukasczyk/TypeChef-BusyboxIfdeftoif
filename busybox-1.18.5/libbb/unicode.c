@@ -6,8 +6,6 @@
  *
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */
-#include "libbb.h"
-#include "unicode.h"
 
 /* If it's not #defined as a constant in unicode.h... */
 #ifndef unicode_status

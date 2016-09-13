@@ -7,7 +7,6 @@
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  */
 
-#include "libbb.h"
 
 /* To avoid problems, the username should consist only of
  * letters, digits, underscores, periods, at signs and dashes,

@@ -9,7 +9,6 @@
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */
 
-#include "libbb.h"
 
 /* Return the current directory, newly allocated, arbitrarily long.
    Return NULL and set errno on error.

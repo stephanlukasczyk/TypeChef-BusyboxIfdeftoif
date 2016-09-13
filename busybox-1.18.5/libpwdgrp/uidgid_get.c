@@ -25,7 +25,6 @@ OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-#include "libbb.h"
 
 /* Always sets uid and gid */
 int FAST_FUNC get_uidgid(struct bb_uidgid_t *u, const char *ug, int numeric_ok)
@@ -113,7 +112,6 @@ void FAST_FUNC parse_chown_usergroup_or_die(struct bb_uidgid_t *u, char *user_gr
 }
 
 #if 0
-#include <stdio.h>
 int main()
 {
 	unsigned u;

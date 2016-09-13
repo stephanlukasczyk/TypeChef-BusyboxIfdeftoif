@@ -10,8 +10,6 @@
 /* gcc warns about a null format string, therefore we provide
  * modified definition without "attribute (format)"
  * instead of including libbb.h */
-//#include "libbb.h"
-#include "platform.h"
 extern void bb_perror_msg(const char *s, ...) FAST_FUNC;
 
 /* suppress gcc "no previous prototype" warning */

@@ -3,8 +3,6 @@
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  */
 
-#include "libbb.h"
-#include "archive.h"
 
 char FAST_FUNC get_header_tar_bz2(archive_handle_t *archive_handle)
 {

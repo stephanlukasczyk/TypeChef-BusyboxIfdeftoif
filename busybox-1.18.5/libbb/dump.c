@@ -11,8 +11,6 @@
  * Original copyright notice is retained at the end of this file.
  */
 
-#include "libbb.h"
-#include "dump.h"
 
 static const char index_str[] ALIGN1 = ".#-+ 0123456789";
 

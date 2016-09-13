@@ -8,8 +8,6 @@
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  */
 
-#include "libbb.h"
-#include "xregex.h"
 
 char* FAST_FUNC regcomp_or_errmsg(regex_t *preg, const char *regex, int cflags)
 {

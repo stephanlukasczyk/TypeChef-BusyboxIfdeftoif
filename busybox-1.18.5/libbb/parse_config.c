@@ -8,7 +8,6 @@
  * Also for use in uClibc (http://uclibc.org/) licensed under LGPLv2.1 or later.
  */
 
-#include "libbb.h"
 
 #if defined ENABLE_PARSE && ENABLE_PARSE
 int parse_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;

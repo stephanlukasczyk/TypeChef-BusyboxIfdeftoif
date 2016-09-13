@@ -6,7 +6,6 @@
  *
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */
-#include "libbb.h"
 
 /* Does str start with "cpu"? */
 int FAST_FUNC starts_with_cpu(const char *str)

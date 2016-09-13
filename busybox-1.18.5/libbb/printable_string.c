@@ -6,8 +6,6 @@
  *
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */
-#include "libbb.h"
-#include "unicode.h"
 
 const char* FAST_FUNC printable_string(uni_stat_t *stats, const char *str)
 {

@@ -20,7 +20,6 @@
  * xfunc_printf.c contains those which do.
  */
 
-#include "libbb.h"
 
 
 /* All the functions starting with "x" call bb_error_msg_and_die() if they

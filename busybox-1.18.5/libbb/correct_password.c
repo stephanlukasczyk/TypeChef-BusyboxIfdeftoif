@@ -28,7 +28,6 @@
  * SUCH DAMAGE.
  */
 
-#include "libbb.h"
 
 /* Ask the user for a password.
  * Return 1 if the user gives the correct password for entry PW,

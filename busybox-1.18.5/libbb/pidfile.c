@@ -9,7 +9,6 @@
 
 /* Override ENABLE_FEATURE_PIDFILE */
 #define WANT_PIDFILE 1
-#include "libbb.h"
 
 smallint wrote_pidfile;
 
