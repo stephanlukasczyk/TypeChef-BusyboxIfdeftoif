@@ -1460,44 +1460,44 @@ typedef struct procps_status_t {
 #endif
 } procps_status_t;
 /* flag bits for procps_scan(xx, flags) calls */
-enum {
-	PSSCAN_PID      = 1 << 0,
-	PSSCAN_PPID     = 1 << 1,
-	PSSCAN_PGID     = 1 << 2,
-	PSSCAN_SID      = 1 << 3,
-	PSSCAN_UIDGID   = 1 << 4,
-	PSSCAN_COMM     = 1 << 5,
-	/* PSSCAN_CMD      = 1 << 6, - use read_cmdline instead */
-	PSSCAN_ARGV0    = 1 << 7,
-	PSSCAN_EXE      = 1 << 8,
-	PSSCAN_STATE    = 1 << 9,
-	PSSCAN_VSZ      = 1 << 10,
-	PSSCAN_RSS      = 1 << 11,
-	PSSCAN_STIME    = 1 << 12,
-	PSSCAN_UTIME    = 1 << 13,
-	PSSCAN_TTY      = 1 << 14,
-	PSSCAN_SMAPS	= (1 << 15) * ENABLE_FEATURE_TOPMEM,
-	/* NB: used by find_pid_by_name(). Any applet using it
-	 * needs to be mentioned here. */
-	PSSCAN_ARGVN    = (1 << 16) * (ENABLE_KILLALL
-				|| ENABLE_PGREP || ENABLE_PKILL
-				|| ENABLE_PIDOF
-				|| ENABLE_SESTATUS
-				),
-	PSSCAN_CONTEXT  = (1 << 17) * ENABLE_SELINUX,
-	PSSCAN_START_TIME = 1 << 18,
-	PSSCAN_CPU      = (1 << 19) * ENABLE_FEATURE_TOP_SMP_PROCESS,
-	PSSCAN_NICE     = (1 << 20) * ENABLE_FEATURE_PS_ADDITIONAL_COLUMNS,
-	PSSCAN_RUIDGID  = (1 << 21) * ENABLE_FEATURE_PS_ADDITIONAL_COLUMNS,
-	PSSCAN_TASKS	= (1 << 22) * ENABLE_FEATURE_SHOW_THREADS,
-	/* These are all retrieved from proc/NN/stat in one go: */
-	PSSCAN_STAT     = PSSCAN_PPID | PSSCAN_PGID | PSSCAN_SID
-	/**/            | PSSCAN_COMM | PSSCAN_STATE
-	/**/            | PSSCAN_VSZ | PSSCAN_RSS
-	/**/            | PSSCAN_STIME | PSSCAN_UTIME | PSSCAN_START_TIME
-	/**/            | PSSCAN_TTY | PSSCAN_NICE
-	/**/            | PSSCAN_CPU
-};
+//enum {
+//	PSSCAN_PID      = 1 << 0,
+//	PSSCAN_PPID     = 1 << 1,
+//	PSSCAN_PGID     = 1 << 2,
+//	PSSCAN_SID      = 1 << 3,
+//	PSSCAN_UIDGID   = 1 << 4,
+//	PSSCAN_COMM     = 1 << 5,
+//	/* PSSCAN_CMD      = 1 << 6, - use read_cmdline instead */
+//	PSSCAN_ARGV0    = 1 << 7,
+//	PSSCAN_EXE      = 1 << 8,
+//	PSSCAN_STATE    = 1 << 9,
+//	PSSCAN_VSZ      = 1 << 10,
+//	PSSCAN_RSS      = 1 << 11,
+//	PSSCAN_STIME    = 1 << 12,
+//	PSSCAN_UTIME    = 1 << 13,
+//	PSSCAN_TTY      = 1 << 14,
+//	PSSCAN_SMAPS	= (1 << 15) * ENABLE_FEATURE_TOPMEM,
+//	/* NB: used by find_pid_by_name(). Any applet using it
+//	 * needs to be mentioned here. */
+//	PSSCAN_ARGVN    = (1 << 16) * (ENABLE_KILLALL
+//				|| ENABLE_PGREP || ENABLE_PKILL
+//				|| ENABLE_PIDOF
+//				|| ENABLE_SESTATUS
+//				),
+//	PSSCAN_CONTEXT  = (1 << 17) * ENABLE_SELINUX,
+//	PSSCAN_START_TIME = 1 << 18,
+//	PSSCAN_CPU      = (1 << 19) * ENABLE_FEATURE_TOP_SMP_PROCESS,
+//	PSSCAN_NICE     = (1 << 20) * ENABLE_FEATURE_PS_ADDITIONAL_COLUMNS,
+//	PSSCAN_RUIDGID  = (1 << 21) * ENABLE_FEATURE_PS_ADDITIONAL_COLUMNS,
+//	PSSCAN_TASKS	= (1 << 22) * ENABLE_FEATURE_SHOW_THREADS,
+//	/* These are all retrieved from proc/NN/stat in one go: */
+//	PSSCAN_STAT     = PSSCAN_PPID | PSSCAN_PGID | PSSCAN_SID
+//	/**/            | PSSCAN_COMM | PSSCAN_STATE
+//	/**/            | PSSCAN_VSZ | PSSCAN_RSS
+//	/**/            | PSSCAN_STIME | PSSCAN_UTIME | PSSCAN_START_TIME
+//	/**/            | PSSCAN_TTY | PSSCAN_NICE
+//	/**/            | PSSCAN_CPU
+//};
 //procps_status_t* alloc_procps_scan(void) FAST_FUNC;
 void free_procps_scan(procps_status_t* sp) FAST_FUNC;
 procps_status_t* procps_scan(procps_status_t* sp, int flags) FAST_FUNC;
