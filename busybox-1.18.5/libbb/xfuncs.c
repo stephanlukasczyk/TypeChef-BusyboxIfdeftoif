@@ -295,9 +295,9 @@ int FAST_FUNC wait4pid(pid_t pid)
 	}
 	if (safe_waitpid(pid, &status, 0) == -1)
 		return -1;
-	if (WIFEXITED(status))
-		return WEXITSTATUS(status);
-	if (WIFSIGNALED(status))
-		return WTERMSIG(status) + 0x180;
+    if (((status) & 0x7f) == 0)
+        return (((status) & 0xff00) >> 8);
+    if (((signed char) (((status) & 0x7f) + 1) >> 1) > 0)
+        return ((status) & 0x7f + 0x180;
 	return 0;
 }
