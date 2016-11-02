@@ -180,7 +180,7 @@ time_t FAST_FUNC validate_tm_time(const char *date_str, struct tm *ptm)
  * typically requiring -lrt. We just skip all this mess */
 static void get_mono(struct timespec *ts)
 {
-	if (syscall(__NR_clock_gettime, CLOCK_MONOTONIC, ts))
+//	if (syscall(__NR_clock_gettime, CLOCK_MONOTONIC, ts))
 		bb_error_msg_and_die("clock_gettime(MONOTONIC) failed");
 }
 unsigned long long FAST_FUNC monotonic_ns(void)
