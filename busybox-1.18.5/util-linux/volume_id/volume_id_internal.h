@@ -18,6 +18,9 @@
  *	Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
+#ifndef VOLUME_ID_H_
+#define VOLUME_ID_H_
+
 #include "libbb.h"
 #include "volume_id.h"
 
@@ -227,3 +230,5 @@ int FAST_FUNC volume_id_probe_udf(struct volume_id *id /*,uint64_t off*/);
 int FAST_FUNC volume_id_probe_xfs(struct volume_id *id /*,uint64_t off*/);
 
 POP_SAVED_FUNCTION_VISIBILITY
+
+#endif
