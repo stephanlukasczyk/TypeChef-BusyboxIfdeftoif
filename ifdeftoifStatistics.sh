@@ -13,7 +13,7 @@ path=$(cd "$(dirname "$0")"; pwd)
 extension="_ifdeftoif.c"
 flags="-U HAVE_LIBDMALLOC -DCONFIG_FIND -U CONFIG_FEATURE_WGET_LONG_OPTIONS -U ENABLE_NC_110_COMPAT -U CONFIG_EXTRA_COMPAT -D_GNU_SOURCE --interface"
 srcPath="busybox-1.18.5"
-export partialPreprocFlags="--bdd -x CONFIG_ --include busybox/config.h -I $srcPath/include --featureModelDimacs busybox/featureModel.dimacs --recordTiming --parserstatistics --debugInterface --ifdeftoifstatistics --interface"
+export partialPreprocFlags="--bdd -x CONFIG_ --include busybox/config.h -I $srcPath/include -I $srcPath/archival/libarchive -I $srcPath/util-linux/volume_id -I $srcPath/networking/udhcp --featureModelDimacs busybox/featureModel.dimacs --recordTiming --parserstatistics --debugInterface --ifdeftoifstatistics --interface --simpleSwitch"
 
 ## Reset output
 filesToProcess|while read i; do
